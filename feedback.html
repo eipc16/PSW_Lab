@@ -4,10 +4,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RetroGames</title>
-    <meta name="description" content="Strona poświęcona wszystkim starym grom.">
-    <meta name="author" content="Przemysław Pietrzak, Mateusz Pakuła">
-    <meta name="keywords" content="retro, games, gry, old, stare, game, oldschool">
+    <title>Feedback - RetroGames</title>
+    <meta name="description" content="Strona umożliwiająca wysłanie opinii.">
   </head>
 
   <body>
@@ -33,6 +31,87 @@
         </a>
     </p>
 
-    <h1><strong>RetroGames - główne źródło wiedzy na temat gier retro</strong></h1>
+    <h1>Wyślij swoją opinię</h1>
+    <p>Tutaj możesz przekazać nam swoją opinię o stronie!</p>
+
+    <form method = "post" action = "index.html">
+
+      <input type = "hidden" name = "recipient"
+        value = "pprzemek.312@gmail.com">
+      <input type = "hidden" name = "subject"
+        value = "Formularz opiniowy">
+      <input type = "hidden" name = "redirect"
+        value = "index.html">
+
+      <p><label>Imię:
+        <input name = "name" type = "text" size = "25">
+      </label></p>
+
+      <p><label>Opinia:
+        <textarea name = "comments" rows = "4" cols = "36" maxlength = "200"></textarea>
+      </label></p>
+
+      <p><label>E-mail:
+        <input name = "name" type = "email" size = "25">
+      </label></p>
+
+      <p>
+        <label>Oceń naszą stronę:
+          <select name = "rating">
+            <option selected>"WYŚMIENITA"</option>
+            <option>5</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1</option>
+          </select>
+        </label>
+      </p>
+
+      <p>
+        <strong>Wybierz rzeczy, które chciałbyś poprawić</strong>
+
+        <p>
+        <label>Wygląd strony
+          <input name = "design" type = "checkbox"
+          value = "Design"></label>
+
+        <label>Informacje na stronie
+          <input name = "content" type = "checkbox"
+          value = "Content"></label>
+
+        <label>Trudna w obsłudze
+          <input name = "easyUse" type = "checkbox"
+          value = "EasyUse"></label>
+        </p>
+      </p>
+
+      <p>
+        <strong>Powiedz nam jak znalazłeś naszą stronę!</strong>
+        <p>
+        <label>Wyszukiwarka
+          <input name = "radioButtons" type = "radio"
+          value = "SearchEngine" checked></label>
+
+        <label>Link z innej strony
+          <input name = "radioButtons" type = "radio"
+          value = "Link"></label>
+
+        <label>Od znajomego
+          <input name = "radioButtons" type = "radio"
+          value = "FromFriend"></label>
+
+        <label>Inny sposób
+          <input name = "radioButtons" type = "radio"
+          value = "Other"></label>
+        </p>
+      </p>
+
+      <p>
+        <input type = "submit" value = "Submit">
+        <input type = "reset" value = "Clear">
+      </p>
+
+    </form>
   </body>
 </html>
