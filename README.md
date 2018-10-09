@@ -6,7 +6,7 @@
   - modyfikacja położenia względem linii bazowej itd. (DONE)
 
 2. Grafika:
-  - umieszczanie na stronie w naturalnych rozmiarach i zmodyfikowanych (DONE)
+  - umieszczanie na stronie w naturalnych rozmiarach i zmodyfikowanych (DONE- nie ma zmodyfikowanej)
   - każda grafika powinna posiadać tekst alternatywny (DONE)
 
 3. Listy:
@@ -14,9 +14,9 @@
   - zagnieżdżanie list (DONE)
 
 4. Tabele:
-  - wiersze nagłówkowe
-  - różne formatowanie
-  - zagnieżdżanie
+  - wiersze nagłówkowe (DONE)
+  - różne formatowanie (DONE)
+  - zagnieżdżanie (DONE)
   - łączenie kolumn i wierszy
 
 5. Odnośniki (linki):
