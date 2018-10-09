@@ -2,7 +2,7 @@
   - nagłówki            (DONE)
   - akapity             (DONE)
   - wytłuszczenie       (DONE)
-  - znaki specjalne     ()
+  - znaki specjalne     (DONE)
   - modyfikacja położenia względem linii bazowej itd. (??????)
 
 2. Grafika:
