@@ -1,3 +1,5 @@
+--------[HTML 1]--------
+
 1. Tekst:
   - nagłówki            (DONE)
   - akapity             (DONE)
@@ -33,3 +35,6 @@
   - Checkbox (DONE)
   - TextArea na 200 znaków (DONE)
   - Przyciski do czyszczenia i wysłania formularza (DONE)
+
+
+-------[HTML 2]----------
