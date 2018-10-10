@@ -6,23 +6,23 @@
   - modyfikacja położenia względem linii bazowej itd. (DONE)
 
 2. Grafika:
-  - umieszczanie na stronie w naturalnych rozmiarach i zmodyfikowanych (DONE- nie ma zmodyfikowanej)
+  - umieszczanie na stronie w naturalnych rozmiarach i zmodyfikowanych (DONE)
   - każda grafika powinna posiadać tekst alternatywny (DONE)
 
 3. Listy:
-  - numerowane i nienumerowane (mamy nienumerowane numerowane tez)
+  - numerowane i nienumerowane (DONE)
   - zagnieżdżanie list (DONE)
 
 4. Tabele:
   - wiersze nagłówkowe (DONE)
   - różne formatowanie (DONE)
   - zagnieżdżanie (DONE)
-  - łączenie kolumn i wierszy
+  - łączenie kolumn i wierszy (DONE)
 
 5. Odnośniki (linki):
   - do innej strony (DONE)
-  - do etykiety
-  - umożliwiające pobranie pliku (przez http i ftp), pliki powinny znajdować się w różnych lokalizacjach
+  - do etykiety (DONE)
+  - umożliwiające pobranie pliku (przez http i ftp), pliki powinny znajdować się w różnych lokalizacjach (DONE)
   - wysłanie poczty (DONE)
   - uaktywniane kliknięciem na obrazek (DONE)
 
