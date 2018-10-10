@@ -51,13 +51,15 @@
 
     <p>
       <label>Oceń naszą stronę:
-        <select name="rating">
-          <option selected>"WYŚMIENITA"</option>
-          <option>5</option>
-          <option>4</option>
-          <option>3</option>
-          <option>2</option>
-          <option>1</option>
+        <select>
+          <optgroup label="Podoba mi się">
+            <option value="verygood">Bardzo</option>
+            <option value="somewhatgood">Trochę</option>
+          </optgroup>
+          <optgroup label="Nie podoba mi się">
+            <option value="verybad">Bardzo</option>
+            <option value="somewhatbad">Trochę</option>
+          </optgroup>
         </select>
       </label>
     </p>
