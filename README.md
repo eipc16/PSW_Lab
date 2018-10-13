@@ -3,7 +3,7 @@
 
 2. Kolejne strony powinny wykorzystywać w sposób praktyczny takie elementy struktury strony jak : 'meter', 'mark', 'details', 'summary', 'aside' oraz 'footer'.
 
-3. Utworzyć stronę, ktora będzie zawierać formularz osobowy. Informacje w jakim formacie powinny być pola wypełniane mają być umieszczone po prawej stronie za polem tekstowym do wypełnienia. Formularz powinien mieć opcję autouzupełniania, którą trzeba uzyskać za pomocą atrybutu 'auto-complete'. Należy pobrać takie dane jak:
+3. (DONE) Utworzyć stronę, ktora będzie zawierać formularz osobowy. Informacje w jakim formacie powinny być pola wypełniane mają być umieszczone po prawej stronie za polem tekstowym do wypełnienia. Formularz powinien mieć opcję autouzupełniania, którą trzeba uzyskać za pomocą atrybutu 'auto-complete'. Należy pobrać takie dane jak:
 
   * imię,
   * nazwisko,
