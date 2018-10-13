@@ -3,7 +3,7 @@
 --------[HTML 2]--------
 1. (DONE) Strona startowa ma zawierać odnośniki do pozostałych stron i powinna być napisana z wykorzystaniem elementów struktury strony takich jak 'article', zagnieżdżonych sekcji 'section' oraz 'navigation'.
 
-2. Kolejne strony powinny wykorzystywać w sposób praktyczny takie elementy struktury strony jak : 'meter', 'mark', 'details', 'summary', 'aside' oraz 'footer' (DONE tylko footer).
+2. Kolejne strony powinny wykorzystywać w sposób praktyczny takie elementy struktury strony jak : 'meter' (DONE), 'mark', 'details', 'summary', 'aside' oraz 'footer' (DONE).
 
 3. (DONE) Utworzyć stronę, ktora będzie zawierać formularz osobowy. Informacje w jakim formacie powinny być pola wypełniane mają być umieszczone po prawej stronie za polem tekstowym do wypełnienia. Formularz powinien mieć opcję autouzupełniania, którą trzeba uzyskać za pomocą atrybutu 'auto-complete'. Należy pobrać takie dane jak:
 
