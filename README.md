@@ -1,4 +1,5 @@
 --------[CSS 1]--------
+Wklej tu coś panie.
 
 --------[HTML 2]--------
 1. (DONE) Strona startowa ma zawierać odnośniki do pozostałych stron i powinna być napisana z wykorzystaniem elementów struktury strony takich jak 'article', zagnieżdżonych sekcji 'section' oraz 'navigation'.
