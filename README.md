@@ -5,9 +5,9 @@
 
 3. Zaprezentuj praktyczne wykorzystanie różnych sposobów zmiany wielkości tekstu na stronie (em, px, pt, %). (DONE)
 
-4. Zaprezentuj różne sposoby ustawienia tła strony - jego pozycji, powtarzalności, ograniczania (np. powtarzanie do połowy wysokości strony) i rozciągania (background-color, background-image. background-repeat, background-attachment, background-position, background)
+4. Zaprezentuj różne sposoby ustawienia tła strony - jego pozycji, powtarzalności, ograniczania (np. powtarzanie do połowy wysokości strony) i rozciągania (background-color, background-image. background-repeat, background-attachment, background-position, background) (DONE)
 
-5. Zaprezentuj różne sposoby definiowania selektorów CSS i wraz z ich wykorzystaniem na stronie. Omów w jakich sytuacjach najlepiej je wykorzystywać (identyfikatory, klasy, zagnieżedzenia, >)
+5. Zaprezentuj różne sposoby definiowania selektorów CSS i wraz z ich wykorzystaniem na stronie. Omów w jakich sytuacjach najlepiej je wykorzystywać (identyfikatory, klasy, zagnieżedzenia, >) (DONE)
 
 6. Zaprezentuj praktycznie wszystkie właściwości box-model oraz pozycjonowania elementów na stronie (margin, padding, width, height, position:(absolute, relative, static, fixed), left, right, top, bottom, float, clear)
 

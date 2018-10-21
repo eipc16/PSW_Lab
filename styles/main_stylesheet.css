@@ -3,7 +3,25 @@ body {
   background-color: #e6e2d3;
   font-size: 11pt;
 }
-table {background-color: #c4b7a6;}
+
 .category {font-size: larger;}
 .gametitle {font-size: 80%;}
-.gametable {font-size: 12px;}
+.gametable {font-size: 12px; background-color: #dac292;
+border-color: #b9936c}
+.gamemeter {border: solid;}
+.gametable th, td, img {
+  border-color: #b9936c;
+  border-style: solid;
+  border-width: thick;
+}
+
+
+#indexBody {
+  background: #e6e2d3 url("../images/wallpaper.png") no-repeat right bottom;
+  background-attachment: fixed;
+  background-size: 25%;
+}
+
+h1, h2, h3, h4, p {
+  color: rgb(40, 40, 40);
+}
