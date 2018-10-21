@@ -3,16 +3,38 @@ body {
   background-color: #e6e2d3;
   font-size: 11pt;
 }
+p {
+  margin: 10px
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+}
+
+h1, h2, h3, h4, p {
+  color: rgb(40, 40, 40);
+}
+
 
 .category {font-size: larger;}
 .gametitle {font-size: 80%;}
-.gametable {font-size: 12px; background-color: #dac292;
-border-color: #b9936c}
+.gametable {font-size: 12px; background-color: #cacaca;}
 .gamemeter {border: solid;}
-.gametable th, td, img {
-  border-color: #b9936c;
+.gametable th, .gametable td, .gametable img {
+  border-color: #202020;
   border-style: solid;
   border-width: thick;
+}
+
+.gamedesc {
+  height: auto;
+  width: 500px;
+  padding: 20px;}
+
+.gamedesc h3 {
+  font-weight:bolder;
 }
 
 
@@ -20,8 +42,4 @@ border-color: #b9936c}
   background: #e6e2d3 url("../images/wallpaper.png") no-repeat right bottom;
   background-attachment: fixed;
   background-size: 25%;
-}
-
-h1, h2, h3, h4, p {
-  color: rgb(40, 40, 40);
 }

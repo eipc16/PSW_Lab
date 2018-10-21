@@ -9,7 +9,7 @@
 
 5. Zaprezentuj różne sposoby definiowania selektorów CSS i wraz z ich wykorzystaniem na stronie. Omów w jakich sytuacjach najlepiej je wykorzystywać (identyfikatory, klasy, zagnieżedzenia, >) (DONE)
 
-6. Zaprezentuj praktycznie wszystkie właściwości box-model oraz pozycjonowania elementów na stronie (margin, padding, width, height, position:(absolute, relative, static, fixed), left, right, top, bottom, float, clear)
+6. Zaprezentuj praktycznie wszystkie właściwości box-model oraz pozycjonowania elementów na stronie (margin, padding, width, height, position:(absolute, relative, static, fixed), left, right, top, bottom, float, clear) (DONE)
 
 7. Zaprezentuj różne sposoby formatowania tekstu oraz ustawiania jego szerokości (font-weight, font-style, font-variant, font-size, line-height, font-family)
 
