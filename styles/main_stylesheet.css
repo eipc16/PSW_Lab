@@ -1,3 +1,9 @@
 @charset "UTF-8";
-body {background-color: #e6e2d3}
-table {background-color: #c4b7a6}
+body {
+  background-color: #e6e2d3;
+  font-size: 11pt;
+}
+table {background-color: #c4b7a6;}
+.category {font-size: larger;}
+.gametitle {font-size: 80%;}
+.gametable {font-size: 12px;}

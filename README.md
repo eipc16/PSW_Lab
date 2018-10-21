@@ -3,7 +3,7 @@
 
 2. Zaprezentuje różne możliwości osadzana CSS na stronie. (DONE)
 
-3. Zaprezentuj praktyczne wykorzystanie różnych sposobów zmiany wielkości tekstu na stronie (em, px, pt, %).
+3. Zaprezentuj praktyczne wykorzystanie różnych sposobów zmiany wielkości tekstu na stronie (em, px, pt, %). (DONE)
 
 4. Zaprezentuj różne sposoby ustawienia tła strony - jego pozycji, powtarzalności, ograniczania (np. powtarzanie do połowy wysokości strony) i rozciągania (background-color, background-image. background-repeat, background-attachment, background-position, background)
 
