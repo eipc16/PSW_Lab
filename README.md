@@ -19,7 +19,7 @@
 
 10. Zaprezentuj reguły CSS wykorzystujące wartości atrybutów znaczników HTML. (DONE)
 
-11. Zaprezentuj możliwości używania reguły @media.
+11. Zaprezentuj możliwości używania reguły @media. (DONE)
 
 12. Zaprezentuj działanie pseudoklas CSS: :active,:checked, :disabled, :empty, :enabled, :first, :first-child, :focus, :hover, :last-child, :last-of-type, :link, :not(), :nth-child(), :nth-last-child(), :only-child, :required, :target, :visited
 

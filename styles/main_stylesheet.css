@@ -58,6 +58,13 @@ img[alt="Screenshot"] {
   text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  nav img {
+    width: 60px;
+    height: 45px;
+  }
+}
+
 
 
 #indexBody {
