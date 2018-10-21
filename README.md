@@ -17,7 +17,7 @@
 
 9. Zaprezentuj różne możliwości stylizowania tabel. (DONE)
 
-10. Zaprezentuj reguły CSS wykorzystujące wartości atrybutów znaczników HTML.
+10. Zaprezentuj reguły CSS wykorzystujące wartości atrybutów znaczników HTML. (DONE)
 
 11. Zaprezentuj możliwości używania reguły @media.
 

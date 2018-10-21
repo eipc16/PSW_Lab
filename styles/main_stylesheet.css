@@ -21,11 +21,17 @@ footer {
   font-style: oblique;
 }
 
+img[alt="Screenshot"] {
+  border-style: inset;
+  border-color: #202020;
+  border-width: thick;
+}
+
 .category {font-size: larger;}
 .gametitle {font-size: 80%;}
 .gametable {font-size: 12px; background-color: #cacaca;}
 .gamemeter {border: solid;}
-.gametable th, .gametable td, .gametable img {
+.gametable th, .gametable td {
   border-color: #202020;
   border-style: solid;
   border-width: thick;
