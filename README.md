@@ -11,11 +11,11 @@
 
 6. Zaprezentuj praktycznie wszystkie właściwości box-model oraz pozycjonowania elementów na stronie (margin, padding, width, height, position:(absolute, relative, static, fixed), left, right, top, bottom, float, clear) (DONE)
 
-7. Zaprezentuj różne sposoby formatowania tekstu oraz ustawiania jego szerokości (font-weight, font-style, font-variant, font-size, line-height, font-family)
+7. Zaprezentuj różne sposoby formatowania tekstu oraz ustawiania jego szerokości (font-weight, font-style, font-variant, font-size, line-height, font-family) (DONE)
 
-8. Napisz regułę CSS stosując atrybut: border-width, border-style, border-color.
+8. Napisz regułę CSS stosując atrybut: border-width, border-style, border-color. (DONE)
 
-9. Zaprezentuj różne możliwości stylizowania tabel.
+9. Zaprezentuj różne możliwości stylizowania tabel. (DONE)
 
 10. Zaprezentuj reguły CSS wykorzystujące wartości atrybutów znaczników HTML.
 

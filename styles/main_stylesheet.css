@@ -17,6 +17,9 @@ h1, h2, h3, h4, p {
   color: rgb(40, 40, 40);
 }
 
+footer {
+  font-style: oblique;
+}
 
 .category {font-size: larger;}
 .gametitle {font-size: 80%;}
@@ -27,6 +30,13 @@ h1, h2, h3, h4, p {
   border-style: solid;
   border-width: thick;
 }
+.gametable h2 {
+  text-align: center;
+}
+
+.gametable h2, .gametable h3, .gametable p {
+  font-variant: small-caps;
+}
 
 .gamedesc {
   height: auto;
@@ -36,6 +46,12 @@ h1, h2, h3, h4, p {
 .gamedesc h3 {
   font-weight:bolder;
 }
+
+.gamedetails {
+  line-height: 5px;
+  text-align: center;
+}
+
 
 
 #indexBody {
