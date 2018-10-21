@@ -1,5 +1,5 @@
 --------[CSS 1]--------
-1. Strona startowa zawiera odnośniki  do stron zawierających kolejno: kilka akapitów tekstu, listę odnośników, tabelę oraz formularz. Kodowanie wszystkich stron proszę ostawić jako utf-8. Każda strona posiada własny unikatowy tytuł oraz jest opatrzona meta danymi, w szczegolnosci opisem oraz słowami kluczowymi.
+1. Strona startowa zawiera odnośniki  do stron zawierających kolejno: kilka akapitów tekstu, listę odnośników, tabelę oraz formularz. Kodowanie wszystkich stron proszę ostawić jako utf-8. Każda strona posiada własny unikatowy tytuł oraz jest opatrzona meta danymi, w szczegolnosci opisem oraz słowami kluczowymi. (DONE)
 
 2. Zaprezentuje różne możliwości osadzana CSS na stronie.
 
