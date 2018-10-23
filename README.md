@@ -21,9 +21,9 @@
 
 11. Zaprezentuj możliwości używania reguły @media. (DONE)
 
-12. Zaprezentuj działanie pseudoklas CSS: :active,:checked, :disabled, :empty, :enabled, :first, :first-child, :focus, :hover, :last-child, :last-of-type, :link, :not(), :nth-child(), :nth-last-child(), :only-child, :required, :target, :visited
+12. Zaprezentuj działanie pseudoklas CSS: :active,:checked, :disabled, :empty, :enabled, :first, :first-child, :focus, :hover, :last-child, :last-of-type, :link, :not(), :nth-child(), :nth-last-child(), :only-child, :required, :target, :visited (DONE)
 
-13. Stwórz szablon strony z menu rozwijanym w oparciu o CSS. Menu powinno posiadać co najmniej trzy kategorie, a dla każdej kategorii podkategorię, a dla podkategorii kolejną podkategorię.
+13. Stwórz szablon strony z menu rozwijanym w oparciu o CSS. Menu powinno posiadać co najmniej trzy kategorie, a dla każdej kategorii podkategorię, a dla podkategorii kolejną podkategorię. (DONE)
 
 --> HTML_2 - DONE
 

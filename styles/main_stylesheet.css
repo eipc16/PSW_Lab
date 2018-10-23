@@ -13,14 +13,6 @@ p {
   margin: 10px
 }
 
-ol li:nth-child(odd) {
-  background-color: #EEEEEE;
-}
-
-ol li:nth-last-child(3) {
-  font-weight: bold;
-}
-
 .gametable:last-of-type {
   background-color: #FFEEEE;
 }
@@ -64,7 +56,7 @@ img[alt="Screenshot"] {
 }
 
 p:only-child {
-    background: #cccccc;
+  background: #cccccc;
 }
 
 .gametable th, .gametable td {
@@ -132,11 +124,11 @@ input[type="text"]:hover, input[type="email"]:hover {
   background-color: LightGray;
 }
 
-li {
+.info li {
   width: 300px;
 }
 
-.gametitle li:last-child {
+.info li:last-child {
   border-bottom-style: dashed;
   border-width: thin;
 }
@@ -158,12 +150,87 @@ a:visited {
 }
 
 a:target {
-    border: 2px solid #D4D4D4;
-    background-color: #e5eecc;
+  border: 2px solid #D4D4D4;
+  background-color: #e5eecc;
 }
 
 #indexBody {
   background: #e6e2d3 url("../images/wallpaper.png") no-repeat right bottom;
   background-attachment: fixed;
   background-size: 25%;
+}
+.category {
+  font-family: sans-serif;
+  font-variant: small-caps;
+  font-size: 20px;
+}
+
+.category ul {
+  list-style: none;
+  float: left;
+}
+
+.category ul>li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  position: relative;
+  height: 30px;
+  border: solid;
+  border-width: thin;
+}
+
+.category ul>li>a {
+  padding: 10px;
+  color: #444;
+  text-decoration: none;
+}
+
+.cagetory ul>li>a:hover,
+.category ul>li:hover>a {
+  color: #de5f44;
+  text-decoration: underline;
+}
+
+.category ul>li ul {
+  padding: 0;
+  position: absolute;
+  display: none;
+  left: 0px;
+  top: 30px;
+  width: 200px;
+  text-align: left;
+  background-color: #fcfcfc;
+  border: 1px solid #ccc;
+}
+
+.category ul li:hover>ul {
+  display: block;
+}
+
+.category ul>li ul ul {
+  left: 200px;
+  top: -1px;
+}
+
+.category ul>li ul li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: none;
+  height: auto;
+}
+
+.category ul>li ul li a {
+  padding: 10px 20px;
+  color: #505050;
+  text-decoration: none;
+  display: block;
+}
+
+.category ul>li ul li a:hover,
+.category ul>li ul li:hover>a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #222222;
 }
