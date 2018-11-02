@@ -5,15 +5,15 @@ W witrynie rozwijanej od początku semestru zaprezentuj nowe możliwości format
 
 2. Dla bloku <div> pokaż możliwości właściwości border-radius. (DONE)
 
-3. Pokaż możliwości manipulowania kolorem przy pomocy modeli RGBA oraz HSLA.
+3. Pokaż możliwości manipulowania kolorem przy pomocy modeli RGBA oraz HSLA. (DONE)
 
 4. Zaprezentuj działanie box-shadow. (DONE)
 
-5. Zastosuj na stronach serwisu gradienty liniowe i radialne.
+5. Zastosuj na stronach serwisu gradienty liniowe i radialne. (DONE)
 
-6. Wykorzystaj możliwości umieszczania obrazów w tle przy pomocy właściwości background-image, background-position, background-origin, background-repeat.
+6. Wykorzystaj możliwości umieszczania obrazów w tle przy pomocy właściwości background-image, background-position, background-origin, background-repeat. (DONE)
 
-7. Skonstruuj kilka "obrazkowych" obwódek przy pomocy właściwości: border-image-source, border-image-slice, border-image-repeat.
+7. Skonstruuj kilka "obrazkowych" obwódek przy pomocy właściwości: border-image-source, border-image-slice, border-image-repeat. (DONE)
 
 8. Zaprezentuj możliwości animacji z wykorzystaniem właściwości animation oraz reguły @keyframes wraz z jej selektorami.
 

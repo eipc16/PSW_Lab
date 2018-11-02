@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  background-color: #e6e2d3;
+  background-image: linear-gradient(#d5d1e2, #ffffff);
   font-size: 11pt;
 }
 
@@ -13,18 +13,14 @@ p {
   margin: 10px
 }
 
-.gametable:last-of-type {
-  background-color: #FFEEEE;
-}
-
 nav {
   position: -webkit-sticky;
   position: sticky;
   top: 10px;
 }
 
-h1, h2, h3, h4, p {
-  color: rgb(40, 40, 40);
+h1, h2, h3, h4, p, section {
+  color: hsla(120, 5%, 25%, 100);
 }
 
 footer {
@@ -49,15 +45,14 @@ img[alt="Screenshot"] {
 .gametable {
   font-size: 12px;
   background-color: #cacaca;
+  background-image: radial-gradient(gray 55%, LightGray);
+  border-radius: 10px;
 }
 
 .gamemeter {
   border: solid;
 }
 
-p:only-child {
-  background: #cccccc;
-}
 
 .gametable th, .gametable td {
   border-color: #202020;
@@ -71,8 +66,7 @@ p:only-child {
 
 .gametable h2 {
   text-align: center;
-  text-shadow: 2px 2px 3px #000000;
-  text-s
+  text-shadow: 2px 2px 3px #444444;
 }
 
 .gametable h2, .gametable h3, .gametable p {
@@ -94,6 +88,10 @@ p:only-child {
 }
 
 .gamedetails {
+  border: 10px solid transparent;
+  border-image: url(../images/border.png) 20 20 repeat;
+  background-image: url(../images/details_bg.png);
+  background-size: 10px;
   line-height: 5px;
   text-align: center;
 }
@@ -243,7 +241,7 @@ a:target {
 
 .gameparagraph {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 9px;
 }
 .gameparagraph p {
   background-color: white;
