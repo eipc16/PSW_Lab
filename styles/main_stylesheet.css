@@ -53,7 +53,6 @@ img[alt="Screenshot"] {
   border: solid;
 }
 
-
 .gametable th, .gametable td {
   border-color: #202020;
   border-style: solid;
@@ -66,7 +65,18 @@ img[alt="Screenshot"] {
 
 .gametable h2 {
   text-align: center;
-  text-shadow: 2px 2px 3px #444444;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.gametable h2:hover {
+  text-shadow: 0px 0px 5px #444444;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
 }
 
 .gametable h2, .gametable h3, .gametable p {
@@ -163,6 +173,7 @@ a:target {
   background-attachment: fixed;
   background-size: 25%;
 }
+
 .category {
   font-family: sans-serif;
   font-variant: small-caps;
@@ -243,29 +254,61 @@ a:target {
   background-color: white;
   border-radius: 9px;
 }
+
 .gameparagraph p {
   background-color: white;
 }
-
 
 #mario {
   position: absolute;
   bottom: 0px;
   z-index: -1;
   -webkit-animation: mariomove 0.5s infinite;
+  -moz-animation: mariomove 0.5s infinite;
+  -o-animation: mariomove 0.5s infinite;
   animation: mariomove 0.5s infinite;
   width: auto;
   height: auto;
 }
 
+@-moz-keyframes mariomove {
+  0% {
+    bottom: 0px;
+  }
+
+  25% {
+    bottom: 50px;
+  }
+
+  50% {
+    bottom: 0px;
+  }
+}
+
 @-webkit-keyframes mariomove {
-    0%   {bottom: 0px;}
-    25%  {bottom: 50px;}
-    50% {bottom: 0px;}
+  0% {
+    bottom: 0px;
+  }
+
+  25% {
+    bottom: 50px;
+  }
+
+  50% {
+    bottom: 0px;
+  }
 }
 
 @keyframes mariomove {
-    0%   {bottom: 0px;}
-    25%  {bottom: 50px;}
-    50% {bottom: 0px;}
+  0% {
+    bottom: 0px;
+  }
+
+  25% {
+    bottom: 50px;
+  }
+
+  50% {
+    bottom: 0px;
+  }
 }

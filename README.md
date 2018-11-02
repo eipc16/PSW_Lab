@@ -15,9 +15,9 @@ W witrynie rozwijanej od początku semestru zaprezentuj nowe możliwości format
 
 7. Skonstruuj kilka "obrazkowych" obwódek przy pomocy właściwości: border-image-source, border-image-slice, border-image-repeat. (DONE)
 
-8. Zaprezentuj możliwości animacji z wykorzystaniem właściwości animation oraz reguły @keyframes wraz z jej selektorami.
+8. Zaprezentuj możliwości animacji z wykorzystaniem właściwości animation oraz reguły @keyframes wraz z jej selektorami. (DONE)
 
-9. Zaprezentuj działanie właściwości transition i transform. Pokaż, że elementy można przesuwać, obracać, przekrzywiać. Zaprezentuj zjawisko przekrzywiania obrazów.
+9. Zaprezentuj działanie właściwości transition i transform. Pokaż, że elementy można przesuwać, obracać, przekrzywiać. Zaprezentuj zjawisko przekrzywiania obrazów. (DONE)
 
 10. Wykorzystaj zewnętrzną czcionkę (np. z http://www.google.com/fonts/). Uzyj reguły @font-face.
 
