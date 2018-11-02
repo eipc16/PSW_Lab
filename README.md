@@ -1,3 +1,37 @@
+--------[CSS 2]--------
+W witrynie rozwijanej od początku semestru zaprezentuj nowe możliwości formatowania CSS3. Aby nowe możliwości były poprawnie interpretowane przez różne przeglądarki należy pamiętać o stosowaniu tzw vendor prefixes.
+
+1. Zastosuj właściwości text-shadow. (DONE)
+
+2. Dla bloku <div> pokaż możliwości właściwości border-radius. (DONE)
+
+3. Pokaż możliwości manipulowania kolorem przy pomocy modeli RGBA oraz HSLA.
+
+4. Zaprezentuj działanie box-shadow. (DONE)
+
+5. Zastosuj na stronach serwisu gradienty liniowe i radialne.
+
+6. Wykorzystaj możliwości umieszczania obrazów w tle przy pomocy właściwości background-image, background-position, background-origin, background-repeat.
+
+7. Skonstruuj kilka "obrazkowych" obwódek przy pomocy właściwości: border-image-source, border-image-slice, border-image-repeat.
+
+8. Zaprezentuj możliwości animacji z wykorzystaniem właściwości animation oraz reguły @keyframes wraz z jej selektorami.
+
+9. Zaprezentuj działanie właściwości transition i transform. Pokaż, że elementy można przesuwać, obracać, przekrzywiać. Zaprezentuj zjawisko przekrzywiania obrazów.
+
+10. Wykorzystaj zewnętrzną czcionkę (np. z http://www.google.com/fonts/). Uzyj reguły @font-face.
+
+11. Wykorzystaj na stronie Flexible Box Layout Module (FBLM).
+
+12. Zaprezentuj możliwości publikowania wielokolumnowego (na sztywno) przy pomocy column-count, column-gap, column-rule.
+
+13. Pokaż, że przy pomocy reguły @media można liczbę kolumn uzależnić od rozdzielczości ekranu urządzenia, na którym wyświetlana jest strona.
+
+
+
+
+
+
 --------[CSS 1]--------
 1. Strona startowa zawiera odnośniki  do stron zawierających kolejno: kilka akapitów tekstu, listę odnośników, tabelę oraz formularz. Kodowanie wszystkich stron proszę ostawić jako utf-8. Każda strona posiada własny unikatowy tytuł oraz jest opatrzona meta danymi, w szczegolnosci opisem oraz słowami kluczowymi. (DONE)
 

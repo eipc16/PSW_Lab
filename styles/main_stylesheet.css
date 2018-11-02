@@ -71,6 +71,8 @@ p:only-child {
 
 .gametable h2 {
   text-align: center;
+  text-shadow: 2px 2px 3px #000000;
+  text-s
 }
 
 .gametable h2, .gametable h3, .gametable p {
@@ -237,4 +239,12 @@ a:target {
   text-decoration: none;
   color: #fff;
   background-color: #222222;
+}
+
+.gameparagraph {
+  background-color: white;
+  border-radius: 5px;
+}
+.gameparagraph p {
+  background-color: white;
 }
