@@ -246,3 +246,26 @@ a:target {
 .gameparagraph p {
   background-color: white;
 }
+
+
+#mario {
+  position: absolute;
+  bottom: 0px;
+  z-index: -1;
+  -webkit-animation: mariomove 0.5s infinite;
+  animation: mariomove 0.5s infinite;
+  width: auto;
+  height: auto;
+}
+
+@-webkit-keyframes mariomove {
+    0%   {bottom: 0px;}
+    25%  {bottom: 50px;}
+    50% {bottom: 0px;}
+}
+
+@keyframes mariomove {
+    0%   {bottom: 0px;}
+    25%  {bottom: 50px;}
+    50% {bottom: 0px;}
+}
