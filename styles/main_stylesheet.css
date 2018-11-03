@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: Amaranth;
+  src: url("../assets/Amaranth-Regular.otf") format("opentype");
+}
 
 body {
   background-image: linear-gradient(#d5d1e2, #ffffff);
@@ -79,7 +83,7 @@ img[alt="Screenshot"] {
   transform: rotate(20deg);
 }
 
-.gametable h2, .gametable h3, .gametable p {
+.gametable h2, .gametable h3 {
   font-variant: small-caps;
 }
 
@@ -157,10 +161,6 @@ a:link {
 
 a:visited {
   color: #333333;
-}
-
-:not(footer) {
-  font-family: serif;
 }
 
 a:target {
@@ -251,6 +251,7 @@ a:target {
 }
 
 .gameparagraph {
+  font-family: Amaranth;
   background-color: white;
   border-radius: 9px;
 }

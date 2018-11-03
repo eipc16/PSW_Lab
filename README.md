@@ -19,7 +19,7 @@ W witrynie rozwijanej od początku semestru zaprezentuj nowe możliwości format
 
 9. Zaprezentuj działanie właściwości transition i transform. Pokaż, że elementy można przesuwać, obracać, przekrzywiać. Zaprezentuj zjawisko przekrzywiania obrazów. (DONE)
 
-10. Wykorzystaj zewnętrzną czcionkę (np. z http://www.google.com/fonts/). Uzyj reguły @font-face.
+10. Wykorzystaj zewnętrzną czcionkę (np. z http://www.google.com/fonts/). Uzyj reguły @font-face. (DONE)
 
 11. Wykorzystaj na stronie Flexible Box Layout Module (FBLM).
 
