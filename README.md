@@ -21,7 +21,7 @@ W witrynie rozwijanej od początku semestru zaprezentuj nowe możliwości format
 
 10. Wykorzystaj zewnętrzną czcionkę (np. z http://www.google.com/fonts/). Uzyj reguły @font-face. (DONE)
 
-11. Wykorzystaj na stronie Flexible Box Layout Module (FBLM).
+11. Wykorzystaj na stronie Flexible Box Layout Module (FBLM). (DONE)
 
 12. Zaprezentuj możliwości publikowania wielokolumnowego (na sztywno) przy pomocy column-count, column-gap, column-rule.
 
