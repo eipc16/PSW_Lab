@@ -23,7 +23,7 @@ W witrynie rozwijanej od początku semestru zaprezentuj nowe możliwości format
 
 11. Wykorzystaj na stronie Flexible Box Layout Module (FBLM). (DONE)
 
-12. Zaprezentuj możliwości publikowania wielokolumnowego (na sztywno) przy pomocy column-count, column-gap, column-rule.
+12. Zaprezentuj możliwości publikowania wielokolumnowego (na sztywno) przy pomocy column-count, column-gap, column-rule. (DONE)
 
 13. Pokaż, że przy pomocy reguły @media można liczbę kolumn uzależnić od rozdzielczości ekranu urządzenia, na którym wyświetlana jest strona.
 
