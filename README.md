@@ -17,7 +17,7 @@ W witrynie rozwijanej od początku semestru zaprezentuj nowe możliwości format
 
 8. Zaprezentuj możliwości animacji z wykorzystaniem właściwości animation oraz reguły @keyframes wraz z jej selektorami. (DONE)
 
-9. Zaprezentuj działanie właściwości transition i transform. Pokaż, że elementy można przesuwać, obracać, przekrzywiać. Zaprezentuj zjawisko przekrzywiania obrazów. (DONE)
+9. Zaprezentuj działanie właściwości transition i transform. Pokaż, że elementy można przesuwać, obracać, przekrzywiać. Zaprezentuj zjawisko przenikania obrazów. (DONE)
 
 10. Wykorzystaj zewnętrzną czcionkę (np. z http://www.google.com/fonts/). Uzyj reguły @font-face. (DONE)
 
