@@ -1,7 +1,7 @@
 var data =
 [
   {
-    "Title": "1",
+    "Title": "Twoja matka",
     "Screenshot_1": "games/simcity.jpg",
     "Screenshot_2": "games/simcity2.jpg",
     "Description": "Good",
@@ -15,7 +15,7 @@ var data =
   {
     "Title": "1",
     "Screenshot_1": "games/simcity.jpg",
-    "Screenshot_2": "games/simcity2.jpg",
+    "Screenshot_2": "",
     "Description": "Good",
     "Download": "http://www.google.com",
     "Rating": 5,
