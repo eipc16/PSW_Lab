@@ -55,8 +55,10 @@ function loadTypes(genre="Wszystkie") {
       console.log("Selected: " + genre + " Current: " + game_types[i]["Genre"]);
       type_array = game_types[i]["Types"];
       console.log(type_array)
-      for (var j = 0; j < type_array.length; j++){
+      var j = 0;
+      while (j < type_array.length){
         options += "<option value=\"" + type_array[j] + "\">" +  type_array[j] + "</option>";
+        j++;
       }
     }
   }
