@@ -1,0 +1,23 @@
+
+@media screen and (max-width: 600px) {
+  nav img {
+    width: 60px;
+    height: 45px;
+  }
+}
+
+nav img:active {
+  border-style: solid;
+  border-color: black;
+}
+
+nav:first {
+  display: block;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 99999;
+  top: 10px;
+}

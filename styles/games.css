@@ -1,0 +1,92 @@
+.category {
+  font-size: larger;
+}
+
+.gametitle {
+  font-size: 80%;
+}
+
+.gametable {
+  font-size: 12px;
+  background-color: #cacaca;
+  background-image: radial-gradient(gray 55%, LightGray);
+  border-radius: 10px;
+}
+
+.gamemeter {
+  border: solid;
+}
+
+.gametable th, .gametable td {
+  border-color: #202020;
+  border-style: solid;
+  border-width: thick;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.gametable h2 {
+  text-align: center;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.gametable h2:hover {
+  text-shadow: 0px 0px 5px #444444;
+  padding: 30px;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.gametable h2, .gametable h3 {
+  font-variant: small-caps;
+}
+
+.gamedesc {
+  height: auto;
+  width: 500px;
+  padding: 20px;
+}
+
+.gamedesc h3 {
+  font-weight: bolder;
+}
+
+.gamedesc h3:first-child {
+  font-size: 20px;
+}
+
+.gamedetails {
+  border: 10px solid transparent;
+  border-image: url(../images/border.png) 20 20 repeat;
+  background-image: url(../images/details_bg.png);
+  background-size: 10px;
+  line-height: 5px;
+  position:relative;
+  text-align: center;
+}
+
+#screen1 {
+  opacity: 1;
+}
+
+#screen2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+#screen2:hover {
+  opacity: 1;
+}
