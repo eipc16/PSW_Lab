@@ -12,6 +12,8 @@
 
   <link rel="stylesheet" href="styles/main_stylesheet.css">
   <script src="scripts/navigation.js"></script>
+  <script src="scripts/gamedata.js"></script>
+  <script src="scripts/tables.js"></script>
 </head>
 
 <body>
@@ -22,15 +24,33 @@
 
   <div class="flex-container">
     <script src="scripts/gamedata.js"></script>
-    <script src="scripts/tables.js"></script>
-  </div>
 
+    <div class="game-inputs">
+      <div class="list-input">
+        <label for="genre">Gatunek</label>
+        <select id="genre" onChange='loadTypes(this.value)'></select>
+       </div>
+       <div class="list-input">
+         <label for="type">Rodzaj</label>
+         <select id="type" onChange='updateTables()'></select>
+       </div>
+       <div class="search-input">
+         <label for="search">Nazwa</label>
+         <input type="search" id="nameSearch" onChange='updateTables(this.value)'/>
+       </div>
+   </div>
+
+   <div id="table-container"></div>
+
+  </div>
   <footer>
     <p>Copyright <strong>&copy; P & P, Inc. 2018.</strong> Wszelkie prawa zastrzeżone.</p>
   </footer>
 
   <script type="text/javascript">
     includeHTML();
+    loadGenres();
+    loadTypes();
   </script>
 </body>
 
