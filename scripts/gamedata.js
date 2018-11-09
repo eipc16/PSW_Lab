@@ -1,10 +1,12 @@
 var data =
 [
   {
-    "Title": "Twoja matka",
+    "Title": "SimCity",
     "Screenshot_1": "games/simcity.jpg",
     "Screenshot_2": "games/simcity2.jpg",
-    "Description": "Good",
+    "Description": "
+                  
+                   ",
     "Download": "http://www.google.com",
     "Rating": 4,
     "Year": 1997,
