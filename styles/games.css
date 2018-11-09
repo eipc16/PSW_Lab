@@ -2,6 +2,10 @@
   font-size: larger;
 }
 
+.game-inputs {
+  height: 50px;
+}
+
 .gametitle {
   font-size: 80%;
 }

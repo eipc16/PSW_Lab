@@ -29,18 +29,12 @@
     <script src="scripts/gamedata.js"></script>
 
     <div class="game-inputs">
-      <div class="list-input">
-        <label for="genre">Gatunek</label>
-        <select id="genre" onChange='loadTypes(this.value)'></select>
-       </div>
-       <div class="list-input">
-         <label for="type">Rodzaj</label>
-         <select id="type" onChange='updateTables()'></select>
-       </div>
-       <div class="search-input">
-         <label for="search">Nazwa</label>
-         <input type="search" id="nameSearch" onChange='updateTables(this.value)'/>
-       </div>
+      <label for="genre">Gatunek</label>
+      <select id="genre" onChange='loadTypes(this.value)'></select>
+      <label for="type">Rodzaj</label>
+      <select id="type" onChange='updateTables()'></select>
+      <label for="search">Nazwa</label>
+      <input type="search" id="nameSearch" onChange='updateTables(this.value)'/>
    </div>
 
    <div id="table-container"></div>
