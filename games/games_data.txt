@@ -1,0 +1,30 @@
+<div class="category">
+  <ul>
+    <li>Gry strategiczne
+      <ul>
+        <li>RTS
+          <ul class="gametitle">
+            <li> <a href="#simcity">SimCity</a></li>
+            <li><a>Battle Bugs</a></li>
+          </ul>
+        </li>
+        <li>Turowe
+          <ul class="gametitle">
+            <li><a href="#heroes">Heroes of Might and Magic III</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>Gry platformowe
+      <ul>
+        <li>2D
+          <ul class="gametitle">
+            <li><a>MegaMan</a></li>
+            <li><a> Super Mario Bros</a></li>
+            <li><a>Contra</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
