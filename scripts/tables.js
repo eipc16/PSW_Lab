@@ -1,4 +1,3 @@
-
 function drawTables(genre, type, name="") {
   var HTML_text = "";
 
@@ -68,13 +67,16 @@ function loadTypes(genre="Wszystkie") {
   updateTables();
 }
 
-function updateTables(name="") {
+function updateTables() {
 
   genre_selector = document.getElementById('genre');
   genre = genre_selector.options[genre_selector.selectedIndex].value;
 
   type_selector = document.getElementById('type');
   type = type_selector.options[type_selector.selectedIndex].value;
+
+  search = document.getElementById('nameSearch');
+  name = search.value;
 
   drawTables(genre, type, name);
 }
