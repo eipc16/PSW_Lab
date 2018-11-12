@@ -35,30 +35,27 @@ window.onload = function() {
     number.setAttribute("class", "number-class-black");
     number.setAttribute("id", "number-container");
 
+    var result = 'Na ' + input_number + ' liczb z prawdopodobieństwem wylosowania czerwonej ' + red_prob + ' udalo Ci sie wylosowac ';
+
     if (prob > red_prob) {
       red = false;
     }
 
     if (red) {
       number.setAttribute("class", "number-class-red");
+      result += ' CZERWONA liczbe!';
+    } else {
+      result += ' CZARNA liczbe!';
     }
 
     numbers_field.appendChild(number);
-
-    var result = 'Na ' + input_number + ' liczb z prawdopodobieństwem wylosowania czerwonej ' + red_prob + ' udalo Ci sie wylosowac ';
-
-    if(number.getAttribute('class').value === 'number-class-black')
-      result += ' CZERWONA liczbe!';
-    else {
-      result += ' CZARNA liczbe!';
 
     window.alert(result);
 
     red_prob = 0.0;
     input_number = 0;
-    }
   });
-
+  
   document.getElementById('testButton').addEventListener("click", function() {
     result = window.prompt('Podaj dowolny ciąg znaków!');
     type = 0 // 0 - string, 1 - float, 2 - int
