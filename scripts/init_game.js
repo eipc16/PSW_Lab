@@ -6,7 +6,7 @@ window.onload = function() {
 
     console.log('Cliks: ' + clicks);
     if(clicks > 5) {
-      window.location.pathname = '/simplegame.html';
+      window.location.pathname = 'simplegame.html';
     }
   });
 }
