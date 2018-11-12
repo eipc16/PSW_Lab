@@ -6,7 +6,11 @@ window.onload = function() {
 
     console.log('Cliks: ' + clicks);
     if(clicks > 5) {
-      window.location.pathname = 'simplegame.html';
+      if(window.location.hostname === 'eipc16.github.io') {
+        window.location.pathname = '/PSW_Lab/simplegame.html';
+      } else {
+        window.location.pathname = '/simplegame.html';
+      }
     }
   });
 }
