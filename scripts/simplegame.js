@@ -20,9 +20,9 @@ function getProbability() {
   }
 }
 
-
 window.onload = function() {
-
+  var button = document.getElementById('startButton');
+  button.addEventListener("click", function() {
     input_number = getNumber();
     getProbability();
 
@@ -30,7 +30,8 @@ window.onload = function() {
     var red = true;
     var number = document.createElement('div');
     var numbers_field = document.getElementById('numbers');
-    
+    numbers_field.innerHTML = '';
+
     number.setAttribute("class", "number-class-black");
     number.setAttribute("id", "number-container");
 
@@ -43,4 +44,43 @@ window.onload = function() {
     }
 
     numbers_field.appendChild(number);
+
+    var result = 'Na ' + input_number + ' liczb z prawdopodobieństwem wylosowania czerwonej ' + red_prob + ' udalo Ci sie wylosowac ';
+
+    if(number.getAttribute('class').value === 'number-class-black')
+      result += ' CZERWONA liczbe!';
+    else {
+      result += ' CZARNA liczbe!';
+
+    window.alert(result);
+
+    red_prob = 0.0;
+    input_number = 0;
+    }
+  });
+
+  document.getElementById('testButton').addEventListener("click", function() {
+    result = window.prompt('Podaj dowolny ciąg znaków!');
+    type = 0 // 0 - string, 1 - float, 2 - int
+
+    if(!isNaN(parseFloat(result))){
+      type = 2;
+    }
+
+    if(!isNaN(parseInt(result)) && (parseFloat(result) - parseInt(result)) === 0) {
+      type = 1;
+    }
+
+    switch(type) {
+      case 1:
+        document.writeln('Wpisales liczbe calkowita!');
+        break;
+      case 2:
+        document.writeln('Wpisales liczbe rzeczywista!');
+        break;
+      default:
+        document.writeln('Wpisales Stringa!');
+        break;
+    }
+  })
 };

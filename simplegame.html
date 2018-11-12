@@ -20,11 +20,25 @@
 
   <body id="indexBody" class="gameBody">
   <nav>
-    <div w3-include-html="navigation.html"></div>
+    <div w3-include-html="navigation.html" id="navgame"></div>
   </nav>
 
-  <div id="numbers" class="game-container"></div>
+  <div class="game-body">
+    <p>Kliknij w przycisk, aby rozpocząć grę!</p>
+      <div class="controls">
+        <input type="button" id="startButton" value="Kliknij mnie!" />
+        <br><br>
+      </div>
+      <div id="numbers" class="game-container"></div>
+  </div>
 
+  <div class="game-body">
+    <input type="button" id="testButton" value="Test 1!" />
+  </div>
+
+  <script>
+    includeHTML();
+  </script>
   </body>
 
 </html>

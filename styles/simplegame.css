@@ -1,11 +1,25 @@
 .number-class-black {
-  flex: 1 0 9%;
-  padding: 10px;
   background-color: black;
 }
 
 .number-class-red {
+  background-color: red;
+}
+
+#number-container {
+  position: relative;
   flex: 1 0 9%;
   padding: 10px;
-  background-color: red;
+  height: 80px;
+  width: 80px;
+  left: 37%;
+}
+
+.game-body {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  top: 25%;
+  width: 400px;
+  height: 250px;
 }
