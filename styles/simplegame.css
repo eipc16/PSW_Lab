@@ -17,9 +17,14 @@
 
 .game-body {
   text-align: center;
+  align-items: center;
   display: flex;
   flex-flow: column wrap;
   top: 25%;
   width: 400px;
   height: 250px;
+}
+
+#testButton {
+  width: 80px;
 }

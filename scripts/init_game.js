@@ -5,7 +5,7 @@ window.onload = function() {
     clicks++;
 
     console.log('Cliks: ' + clicks);
-    if(clicks > 5) {
+    if(clicks > 3) {
       if(window.location.hostname === 'eipc16.github.io') {
         window.location.pathname = '/PSW_Lab/simplegame.html';
       } else {
