@@ -14,14 +14,31 @@
   <link rel="stylesheet" href="styles/navigation.css">
   <link rel="stylesheet" href="styles/games.css">
 
-  <script src="scripts/navigation.js"></script>
   <script src="scripts/gamedata.js"></script>
   <script src="scripts/tables.js"></script>
+  <script src="scripts/collections.js"></script>
 </head>
 
 <body>
   <nav>
-    <div w3-include-html="navigation.html"></div>
+    <a href="index.html">
+      <img src="buttons/start.png" id="start" alt="Start">
+    </a>
+    <a href="main.html">
+      <img src="buttons/home.png" id="main" alt="Main Page">
+    </a>
+    <a href="games.html">
+      <img src="buttons/games.png" id="games" alt="List of games">
+    </a>
+    <a href="feedback.html">
+      <img src="buttons/feedback.png" id="feedback" alt="Feedback page">
+    </a>
+    <a href="form.html">
+      <img src="buttons/newsletter.png" id="form" alt="Newsletter page">
+    </a>
+    <a href="about.html">
+      <img src="buttons/about.png" id="about" alt="Something about us">
+    </a>
   </nav>
   <h1><strong>Lista gier</strong></h1>
 
@@ -39,13 +56,33 @@
 
    <div id="table-container"></div>
 
+   <div>
+     <br><br><br><br>
+       <label for="collection">Wybierz typ</label>
+       <select id="collection">
+         <option value="img">Obrazki</option>
+         <option value="links">Linki</option>
+         <option value="forms">Formularze</option>
+         <option value="anchors">Anchors</option>
+       </select>
+
+       <label for="collection_index">Indeks elementu</label>
+       <input type="number" id="collection_index"/>
+       <button onclick="collection('index')">Wybierz</button>
+
+       <label for="collection_id">Identyfikator elementu</label>
+       <input type="text" id="collection_id"/>
+       <button onclick="collection('id')">Wybierz</button>
+
+   <div id="selected-holder"></div>
+   </div>
+
   </div>
   <footer>
     <p>Copyright <strong>&copy; P & P, Inc. 2018.</strong> Wszelkie prawa zastrzeżone.</p>
   </footer>
 
   <script type="text/javascript">
-    includeHTML();
     loadGenres();
     loadTypes();
   </script>
