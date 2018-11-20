@@ -23,18 +23,27 @@
     <div w3-include-html="navigation.html" id="navgame"></div>
   </nav>
 
-  <div class="game-body">
-    <p>Kliknij w przycisk, aby rozpocząć grę!</p>
-      <div class="controls">
-        <input type="button" id="startButton" value="Kliknij mnie!" />
-        <br><br>
-      </div>
-      <div id="numbers" class="game-container"></div>
-  </div>
+  <div class="style-switch">
+    <label for="backgroundcolor">Kolor tła</label>
+    <select id="backgroundcolor" list="colors" onChange='setStyle()'>
+      <option value="#e6e2d3">Domyślny</option>
+      <option value="lightblue">Niebieskie</option>
+      <option value="lightgreen">Zielony</option>
+    </select>
+    <label for="fontcolor">Kolor tekstu</label>
+    <select id="fontcolor" list="colors" onChange='setStyle()'>
+      <option value="black">Czarny</option>
+      <option value="red">Czerwony</option>
+      <option value="green">Zielony</option>
+    </select>
+    <label for="fontsize">Rozmiar czcionki</label>
+    <select id="fontsize" list="sizes" onChange='setStyle()'>
+      <option value="14px">Domyślny</option>
+      <option value="12px">Mały</option>
+      <option value="16px">Duży</option>
+    </select>
 
-  <div class="game-body2">
-    <input type="button" id="testButton" value="Test" />
-  </div>
+ </div>
 
   <div class="game-body2">
     <p>Obecna pozycja myszki</p>
