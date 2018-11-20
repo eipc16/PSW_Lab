@@ -22,6 +22,7 @@ function getProbability() {
 
 window.onload = function() {
   var button = document.getElementById('startButton');
+
   button.addEventListener("click", function() {
     input_number = getNumber();
     getProbability();
@@ -55,7 +56,7 @@ window.onload = function() {
     red_prob = 0.0;
     input_number = 0;
   });
-  
+
   document.getElementById('testButton').addEventListener("click", function() {
     result = window.prompt('Podaj dowolny ciąg znaków!');
     type = 0 // 0 - string, 1 - float, 2 - int
@@ -81,3 +82,37 @@ window.onload = function() {
     }
   })
 };
+
+function isKeyPressed(event) {
+  if (event.altKey && event.shiftKey && !event.ctrlKey) {
+    window.alert('Wcisnales razem SHIFT i ALT');
+  } else if (event.ctrlKey && event.shiftKey && !event.altKey) {
+    window.alert('Wcisnales razem SHIFT i CONTROL!');
+  } else if (event.ctrlKey && event.shiftKey && event.altKey) {
+    window.alert('Wcisnales wszystkie razem!');
+  }
+}
+
+function savePosition(event) {
+    var log = document.getElementById('mousetracker').childNodes[0].wholeText;
+    var history = document.getElementById('mouse-history');
+    var el = document.createTextNode(log);
+
+    if(history.childNodes.length < 1)
+      history.appendChild(el);
+    else
+      if(history.childNodes.length > 4)
+        history.removeChild(history.lastChild);
+      history.insertBefore(el, history.firstChild);
+}
+
+function updatePosition(event) {
+  var div = document.getElementById('mousetracker')
+
+  var coords = document.createTextNode('\nClient X: ' + event.clientX + ' | Client Y: ' + event.clientY + ' ||| Screen X: ' + event.screenX + ' | Screen Y: ' + event.screenY + '\n');
+
+  if(div.childNodes.length < 1)
+    div.appendChild(coords);
+  else
+    div.replaceChild(coords, div.firstChild);
+}
