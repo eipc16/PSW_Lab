@@ -1,7 +1,4 @@
-Zostalo do zrobienia z DOM:
-  1. parentNode
-  2. mouseover
-  3. mouseout
+Zostalo do zrobienia z DOM: (parentNode, mouseover, mouseout)
 
 1. Zademonstrować działanie metod JavaScript: createElement (OK),
 createTextNode (OK), appendChild (OK), insertBefore (OK),
