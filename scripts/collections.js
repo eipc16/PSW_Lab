@@ -19,7 +19,7 @@ function collection(stype) {
 
 function get_collection_id(type, id) {
   if(type === "img"){
-    return document.images.namedItem("main");
+    return document.images.namedItem(id);
   } else if (type === "forms") {
     return document.forms.namedItem(id);
   } else if (type === "links") {
