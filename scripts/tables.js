@@ -79,4 +79,9 @@ function updateTables() {
   name = search.value;
 
   drawTables(genre, type, name);
+  updateData();
+}
+
+function updateData() {
+
 }

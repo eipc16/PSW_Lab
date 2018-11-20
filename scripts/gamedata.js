@@ -70,5 +70,9 @@ var game_types = [
   {
     "Genre": "Gry platformowe",
     "Types": ["2D"]
+  },
+  {
+    "Genre": "Gry akcji",
+    "Types": ["FPS", "RTS"]
   }
 ];
