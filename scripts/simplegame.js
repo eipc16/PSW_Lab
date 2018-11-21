@@ -48,3 +48,23 @@ function setStyle() {
   size = document.getElementById('fontsize').value
   document.body.setAttribute("style", "background-color: " + background + ";color: " + color + ";font-size: " + size);
 }
+
+var col = 0;
+
+function switchParentColor(button) {
+  if(col++ > 1) {
+    col = 0;
+  }
+  var color = "border:solid; background-color: ";
+  if(col === 0) {
+    color += "#e6e2d3;border-radius: 15px";
+  } else if (col === 1) {
+    color += "gray;border-radius: 35px";
+  } else {
+    color += "#cc3cd1;border-radius: 55px";
+  }
+
+  var parent = button.parentNode;
+  console.log(parent);
+  parent.setAttribute("style", color);
+}
