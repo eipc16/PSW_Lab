@@ -9,22 +9,26 @@ function isKeyPressed(event) {
 }
 
 function savePosition(event) {
-    var log = document.getElementById('mousetracker').childNodes[0].wholeText;
-    var history = document.getElementById('mouse-history');
-    var el = document.createTextNode(log);
+    var mousetrack = document.getElementById('mousetracker');
 
-    if(history.childNodes.length < 1)
-      history.appendChild(el);
-    else
-      if(history.childNodes.length > 8){
-        history.removeChild(history.lastChild);
-        history.removeChild(history.lastChild);
-      }
-    history.insertBefore(document.createElement('br'), history.firstChild);
-    history.insertBefore(el, history.firstChild);
+    if(mousetrack.firstChild){
+      var log = mousetrack.childNodes[0].wholeText;
+      var history = document.getElementById('mouse-history');
+      var el = document.createTextNode(log);
+
+      if(history.childNodes.length < 1)
+        history.appendChild(el);
+      else
+        if(history.childNodes.length > 8){
+          history.removeChild(history.lastChild);
+          history.removeChild(history.lastChild);
+        }
+      history.insertBefore(document.createElement('br'), history.firstChild);
+      history.insertBefore(el, history.firstChild);
 
 
-    console.log(history);
+      console.log(history);
+    }
 }
 
 function updatePosition(event) {
