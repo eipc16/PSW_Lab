@@ -1,18 +1,31 @@
-Zostalo do zrobienia z DOM: (parentNode, mouseover, mouseout)
+********* PHP_1 **********
 
-1. Zademonstrować działanie metod JavaScript: createElement (OK),
-createTextNode (OK), appendChild (OK), insertBefore (OK),
-replaceChild (OK), removeChild (OK) oraz właściwości parentNode.
-2. Zademonstrować działanie kolekcji: images (OK), links(OK), forms(OK), anchors(OK)
-oraz metod item(OK) i namedItem(OK).
-3. Umożliwić użytkownikowi zmianę na żądanie stylów CSS: koloru tła (OK), koloru tekstu (OK),
-rodzaju czcionki (z listy) (OK).
-4. Zademonstrować możliwości właściwości altKey (OK), ctrlKey (OK), shiftKey (OK)
-keyCode, clientX (OK), clientY (OK), screenX (OK), screenY (OK) obiektu event.
-Wykorzystać zdarzenia: mousemove (OK), mousedown (OK), mouseover, mouseout.
-5. W formularzach wykorzystać zdarzenia focus (OK) i blur (OK) do wyświetlania tekstów
-pomocy oraz zdarzenia submit(OK) i reset(OK) do wyzwalania okien potwierdzających.
+W skrypcie przetwarzającym dane z formularza należy pokazać umiejętność posługiwania się
 
+następującymi elementami lub właściwościami języka PHP:
+
+• typowanie dynamiczne, konwersja typów, rzutowanie,
+
+• stałe,
+
+• operatory arytmetyczne, operatory przypisania (OK), operatory porównania (OK), pierwszeństwo operatorów,
+
+• tablice indeksowane numerycznie (OK) i tablice asocjacyjne,
+
+• instrukcje sterujące for(OK) i foreach oraz funkcje count(OK), reset, key, next,
+
+• wyrażenia regularne (OK), funkcje preg_match (OK), preg_replace,
+
+• porównywanie łańcuchów (operatory (OK) i funkcje), znaki specjalne w łańcuchach (rola
+
+odwrotnego ukośnika),
+
+• inne tablice superglobalne (np. ujawnianie w odpowiedzi serwera adresu IP klienta),
+
+• funkcja die (OK).
+
+********* PHP_1 **********
+------> DOM - DONE
 -----> JS - DONE
 ----> CSS_2 - DONE
 ---> CSS_1 - DONE
