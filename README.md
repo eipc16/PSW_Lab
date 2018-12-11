@@ -5,7 +5,7 @@ W skrypcie przetwarzającym dane z formularza należy pokazać umiejętność po
 
 następującymi elementami lub właściwościami języka PHP:
 
-• typowanie dynamiczne (OK), <b>konwersja typów<b>, rzutowanie (OK),
+• typowanie dynamiczne (OK), <b>konwersja typów</b>, rzutowanie (OK),
 
 • stałe (OK),
 
