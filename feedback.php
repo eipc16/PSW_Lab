@@ -73,7 +73,7 @@
       <p style='font-size:16pt'><?php
       define('LIMIT', 100000);
       $diff = abs($sum - LIMIT);
-      $msg = 'To więcej niż ' . LIMIT . ', aż o ' . $diff;
+      $msg = "o więcej niż " . LIMIT . ", aż o  $diff";
       $patterns = array('/więcej/', '/aż/', '/ o /');
       $replacement = array('mniej', 'brakuje', ' ');
       if($sum < LIMIT){
