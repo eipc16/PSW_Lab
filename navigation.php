@@ -18,4 +18,8 @@
 <a href="about.html">
   <img src="buttons/about.png" id="about" alt="Something about us">
 </a>
+
+  <?php
+  echo 'twuj stary pijony';
+  ?>
 </html>

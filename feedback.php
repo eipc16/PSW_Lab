@@ -73,14 +73,36 @@
       <p style='font-size:16pt'><?php
       define('LIMIT', 100000);
       $diff = abs($sum - LIMIT);
-      $msg = "o więcej niż " . LIMIT . ", aż o  $diff";
+      $msg = "To więcej niż " . LIMIT . ", aż o  $diff";
       $patterns = array('/więcej/', '/aż/', '/ o /');
       $replacement = array('mniej', 'brakuje', ' ');
       if($sum < LIMIT){
         $msg = preg_replace($patterns, $replacement, $msg);
       }
       echo $msg;
-      ?></p>
+
+      $result = LIMIT / $diff;
+      echo '<br><br><br>' . LIMIT . " / " . $diff . " = " . $result . ' (' . gettype($result) . ')';
+      settype($result, 'integer');
+      echo '<br>' . LIMIT . " / " . $diff . " = " . $result . ' (' . gettype($result) . ')';
+      ?></p><br><br>
+
+
+      <?php
+      $continents = array("Afryka", "Ameryka Południowa", "Ameryka Północna", "Antarktyda", "Australia", "Eurazja");
+      echo "<p>Kontynenty:<br>";
+      do {
+        echo current($continents) . "<br>";
+      } while(next($continents) != NULL);
+      echo "</p>";
+      reset($continents);
+      echo "<p>Kontynenty, których nazwa składa się z dwóch części:<br>";
+      do {
+        if(count(explode(" ", current($continents))) > 1)
+          echo current($continents) . "<br>";
+      } while(next($continents) != NULL);
+      ?>
+
     <footer>
       <p>Copyright <strong>&copy; P & P, Inc. 2018.</strong> Wszelkie prawa zastrzeżone.</p>
     </footer>
