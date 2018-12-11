@@ -5,7 +5,7 @@ var helpArray = ["Powiedz nam jak się nazywasz!",
 		 "Powiedz nam co możemy poprawić w przyszłości!",
 		 "Powiedz nam w jaki sposób tutaj trafiłeś!"];
 
-var inputTypes = ["name", "comments", "email", "rating", "content", "radioButtons"];
+var inputTypes = ["name", "comments", "email", "rating", "checkboxDiv", "radioDiv"];
 
 var helpText;
 
@@ -15,8 +15,13 @@ window.onload = function() {
   helpText.setAttribute("style", "font-size: 24px;color:blue;");
 
   for(var i = 0; i < inputTypes.length; i++) {
-    registerListeners(document.getElementById(inputTypes[i]), i);
-  }
+		if(i < 4)
+    	registerListeners(document.getElementById(inputTypes[i]), i, ["focus", "blur"]);
+		else{
+			registerListeners(document.getElementById(inputTypes[i]), i, ["mouseover", "mouseout"]);
+			console.log('elo');
+		}
+	}
 
   registerFormListeners(document.getElementById('feedback-form'));
 }
@@ -30,18 +35,11 @@ function registerFormListeners(object) {
   }, false);
 }
 
-function registerListeners(object, index) {
-  object.addEventListener("focus", function() {
+function registerListeners(object, index, type) {
+  object.addEventListener(type[0], function() {
     helpText.innerHTML = helpArray[index];
   }, false);
-  object.addEventListener("blur", function() {
+  object.addEventListener(type[1], function() {
     helpText.innerHTML = "";
   }, false);
 }
-
-object.addEventListener( "focus",
-function() { helpText.innerHTML = helpArray[ messageNumber ]; },
-false );
-object.addEventListener( "blur",
-function() { helpText.innerHTML = helpArray[ 6 ]; }, false );
-window.addEventListener( "load", init, false );

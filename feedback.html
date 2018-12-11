@@ -25,7 +25,7 @@
   <h1>Wyślij swoją opinię</h1>
   <p>Tutaj możesz przekazać nam swoją opinię o stronie!</p>
 
-  <form id="feedback-form" method="post" action="index.html">
+  <form id="feedback-form" method="post" action="feedback.php">
 
     <input type="hidden" name="recipient" value="pprzemek.312@gmail.com">
     <input type="hidden" name="subject" value="Formularz opiniowy">
@@ -40,12 +40,16 @@
       </label></p>
 
     <p><label>E-mail:
-        <input id="email" name="name" type="email" size="25">
+        <input id="email" name="email" type="email" size="25">
+      </label></p>
+
+    <p><label>Telefon:
+          <input id="phone" name="phone" type="text" size="25">
       </label></p>
 
     <p>
       <label>Oceń naszą stronę:
-        <select id="rating">
+        <select id="rating" name="rating">
           <optgroup label="Podoba mi się">
             <option value="verygood">Bardzo</option>
             <option value="somewhatgood">Trochę</option>
@@ -58,23 +62,23 @@
       </label>
     </p>
 
-    <div id="future">
+    <div id="checkboxDiv">
     <strong>Wybierz rzeczy, które chciałbyś poprawić</strong>
 
     <p>
       <label>Wygląd strony
-        <input id="content" name="design" type="checkbox" value="Design"></label>
+        <input id="content" name="checkboxes[]" type="checkbox" value="Design"></label>
 
       <label>Informacje na stronie
-        <input id="content" name="content" type="checkbox" value="Content"></label>
+        <input id="content" name="checkboxes[]" type="checkbox" value="Content"></label>
 
       <label>Trudna w obsłudze
-        <input id="content" name="easyUse" type="checkbox" value="EasyUse" disabled></label>
+        <input id="content" name="checkboxes[]" type="checkbox" value="EasyUse" disabled></label>
     </p>
 
   </div>
 
-  <div id="wherefrom">
+  <div id="radioDiv">
     <strong>Powiedz nam jak znalazłeś naszą stronę!</strong>
     <p>
       <label>Wyszukiwarka
