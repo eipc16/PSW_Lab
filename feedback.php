@@ -38,17 +38,49 @@
     <?php
     if (isset($_POST['checkboxes'])) {
       $results = $_POST['checkboxes'];
-      for ($i = 0; $i < count($results) ; $i++){
-        if($results[$i] == 'Design')
-          print('<p style="color:blue;font-size:14pt;">Postaramy się naprawic wyglad naszej strony! Dziekujemy za opinie!</p>');
-        elseif(strcmp($results[$i], "Content") == 0)
-          print('<p style="color:darkgreen;font-size:14pt;">Postaramy sie dodac wiecej tresci do naszej strony! Dziekujemy za opinie!</p>');
+      $string_design = "<p style=\"color:blue;font-size:14pt;\">Postaramy się naprawic wyglad naszej strony! Dziekujemy za opinie!</p>";
+      $string_content = "<p style=\"color:darkgreen;font-size:14pt;\">Postaramy sie dodac wiecej tresci do naszej strony! Dziekujemy za opinie!</p>";
+      $response = array("bad_design"=>$string_design, "bad_content"=>$string_content);
+      foreach ($results as $val) {
+        if($val == 'Design')
+          echo $response['bad_design'];
+        elseif(strcmp($val, 'Content') == 0)
+          echo $response['bad_content'];
       }
     } else {
-      print('<p style="font-size:14pt;">Bardzo nasz cieszy, ze podoba Ci sie nasza strona!</p>');
+      echo '<p style="font-size:14pt;">Bardzo nasz cieszy, ze podoba Ci sie nasza strona!</p>';
     }
     ?>
 
+    <p style='font-size:16pt'>Twoja szczęśliwa liczba:
+      <?php
+      $numbers = explode("-", $_POST['phone']);
+      for ($i = 0; $i < count($numbers); $i++){
+          echo $numbers[$i];
+          if($i < count($numbers) - 1)
+            if($i % 2 == 0)
+              echo ' + ';
+            else {
+              echo ' * ';
+            }
+          else {
+            echo ' = ';
+          }
+      }
+      $sum = $numbers[0] + $numbers[1] * $numbers[2];;
+      echo $sum;
+      ?>.</p>
+      <p style='font-size:16pt'><?php
+      define('LIMIT', 100000);
+      $diff = abs($sum - LIMIT);
+      $msg = 'To więcej niż ' . LIMIT . ', aż o ' . $diff;
+      $patterns = array('/więcej/', '/aż/', '/ o /');
+      $replacement = array('mniej', 'brakuje', ' ');
+      if($sum < LIMIT){
+        $msg = preg_replace($patterns, $replacement, $msg);
+      }
+      echo $msg;
+      ?></p>
     <footer>
       <p>Copyright <strong>&copy; P & P, Inc. 2018.</strong> Wszelkie prawa zastrzeżone.</p>
     </footer>
