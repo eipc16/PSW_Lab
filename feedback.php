@@ -29,7 +29,8 @@
     }
   ?>
 
-  <p style='font-size:16pt'>Witaj <strong><?php print($_POST['name'])?></strong>.
+  <p style='font-size:16pt'>Witaj <strong><?php print($_POST['name'])  ?></strong><em>(
+    <?php echo 'Adres IP: \'' . $_SERVER['REMOTE_ADDR'] . '\'' ?>)</em>.
     Bardzo dziękujemy Ci za wypełnienie ankiety!
     Będziemy na bieżąco informowac Cie o postepach pod adresem e-mail <strong><?php print($_POST['email'])?></strong>
     lub twoim numerem telefonu <strong><?php print($_POST['phone'])?></strong>!</p>
@@ -40,7 +41,7 @@
       for ($i = 0; $i < count($results) ; $i++){
         if($results[$i] == 'Design')
           print('<p style="color:blue;font-size:14pt;">Postaramy się naprawic wyglad naszej strony! Dziekujemy za opinie!</p>');
-        elseif($results[$i] == "Content")
+        elseif(strcmp($results[$i], "Content") == 0)
           print('<p style="color:darkgreen;font-size:14pt;">Postaramy sie dodac wiecej tresci do naszej strony! Dziekujemy za opinie!</p>');
       }
     } else {
