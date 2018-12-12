@@ -174,7 +174,7 @@ html {
   }
 }
 
-#login {
+.login {
   position: absolute;
   right: 45px;
   top: 25px;

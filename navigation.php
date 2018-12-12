@@ -22,14 +22,14 @@
 <a href="about.html">
   <img src="buttons/about.png" id="about" alt="Something about us">
 </a>
-<form id="login" method="post" action="login.php" <?php if(isset($_SESSION['user_id'])) echo 'hidden';?>>
+<form class="login" method="post" action="login.php" <?php if(isset($_SESSION['user_id'])) echo 'hidden';?>>
   <input type="hidden" name="target" value="index.html" />
   <input type="hidden" name="action" value="login"/>
   <input type="text" name="user"/>
   <input type="password" name="password"/>
   <input type="submit" value="Zaloguj się!"/>
 </form>
-<form id="login" method="post" action="login.php" <?php if(!isset($_SESSION['user_id'])) echo 'hidden';?>>
+<form class="login" method="post" action="login.php" <?php if(!isset($_SESSION['user_id'])) echo 'hidden';?>>
   <input type="hidden" name="target" value="index.html" />
   <input type="hidden" name="action" value="logout"/>
   <div>Użytkownik: <?php echo $_SESSION['user_id'] ?> </div><br>
