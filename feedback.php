@@ -19,7 +19,7 @@
 
 <body>
   <nav>
-    <div w3-include-html="navigation.html"></div>
+    <div w3-include-html="navigation.php"></div>
   </nav>
 
   <?php
@@ -83,6 +83,7 @@
 
       $result = LIMIT / $diff;
       echo '<br><br><br>' . LIMIT . " / " . $diff . " = " . $result . ' (' . gettype($result) . ')';
+      echo '<br>' . LIMIT . " / " . $diff . " = " . (integer)$result . ' (rzutowanie na integer)';
       settype($result, 'integer');
       echo '<br>' . LIMIT . " / " . $diff . " = " . $result . ' (' . gettype($result) . ')';
       ?></p><br><br>
