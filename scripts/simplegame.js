@@ -19,7 +19,7 @@ function savePosition(event) {
       if(history.childNodes.length < 1)
         history.appendChild(el);
       else
-        if(history.childNodes.length > 8){
+        if(history.childNodes.length > 6){
           history.removeChild(history.lastChild);
           history.removeChild(history.lastChild);
         }
