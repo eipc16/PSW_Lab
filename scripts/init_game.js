@@ -4,12 +4,12 @@ window.onload = function() {
   window.addEventListener("click", function() {
     clicks++;
 
-    console.log('Cliks: ' + clicks);
+    console.log('Clicks: ' + clicks);
     if(clicks > 3) {
       if(window.location.hostname === 'eipc16.github.io') {
-        window.location.pathname = '/PSW_Lab/simplegame.html';
+        window.location.pathname = '/PSW_Lab/simplegame.php';
       } else {
-        window.location.pathname = '/simplegame.html';
+        window.location.pathname = '/simplegame.php';
       }
     }
   });

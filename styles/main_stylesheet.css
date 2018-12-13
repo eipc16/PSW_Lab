@@ -173,3 +173,10 @@ html {
     column-count: 3;
   }
 }
+
+#login {
+  position: absolute;
+  right: 45px;
+  top: 25px;
+  text-align: center;
+}

@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  
+  if(!isset($_SESSION['user_id'])){
+    header("Location: index.html");
+  }
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -18,7 +26,7 @@
 
 <body>
   <nav>
-    <div w3-include-html="navigation.html"></div>
+    <div w3-include-html="navigation.php"></div>
   </nav>
 
   <section>

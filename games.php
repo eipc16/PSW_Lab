@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  
+  if(!isset($_SESSION['user_id'])){
+    header("Location: index.html");
+  }
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -17,28 +25,12 @@
   <script src="scripts/gamedata.js"></script>
   <script src="scripts/tables.js"></script>
   <script src="scripts/collections.js"></script>
+  <script src="scripts/navigation.js"></script>
 </head>
 
 <body>
   <nav>
-    <a href="index.html">
-      <img src="buttons/start.png" id="start" alt="Start">
-    </a>
-    <a href="main.html">
-      <img src="buttons/home.png" id="main" alt="Main Page">
-    </a>
-    <a href="games.html">
-      <img src="buttons/games.png" id="games" alt="List of games">
-    </a>
-    <a href="feedback.html">
-      <img src="buttons/feedback.png" id="feedback" alt="Feedback page">
-    </a>
-    <a href="form.html">
-      <img src="buttons/newsletter.png" id="form" alt="Newsletter page">
-    </a>
-    <a href="about.html">
-      <img src="buttons/about.png" id="about" alt="Something about us">
-    </a>
+    <div w3-include-html="navigation.php"></div>
   </nav>
   <h1><strong>Lista gier</strong></h1>
 
@@ -85,6 +77,7 @@
   <script type="text/javascript">
     loadGenres();
     loadTypes();
+    includeHTML();
   </script>
 </body>
 
