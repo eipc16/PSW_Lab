@@ -24,7 +24,11 @@
     }
 
     if(isset($_SESSION['user_id'])) {
-      $update_query = "";
+      $username = $_SESSION['user_id'];
+      $update_query = "UPDATE account
+                       SET username = '$login', password = '$password', first_name = '$first_name',
+                           last_name = '$last_name', birth_date = '$birth_date', email = '$email'
+                       WHERE username = '$username'";
     } else {
       $update_query = "INSERT INTO account (id, username, password, first_name, last_name, birth_dat, email)
                        VALUES (NULL, '$login', '$password', '$first_name', '$last_name', '$birth_date', '$email')";
