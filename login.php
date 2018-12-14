@@ -21,6 +21,8 @@
     if(mysqli_num_rows($result) == 1) {
         $_SESSION['user_id'] = $username;
     }
+
+    mysqli_close($database);
   }
 
   if(!empty($_POST)) {

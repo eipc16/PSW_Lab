@@ -52,8 +52,8 @@
                        WHERE username = '$username'";
       $_SESSION['user_id'] = $login;
     } else {
-      $update_query = "INSERT INTO account (id, username, password, first_name, last_name, birth_date, email)
-                       VALUES (NULL, '$login', '$password', '$first_name', '$last_name', '$birth_date', '$email')";
+      $update_query = "INSERT INTO account (id, username, password, first_name, last_name, birth_date, email, is_admin)
+                       VALUES (NULL, '$login', '$password', '$first_name', '$last_name', '$birth_date', '$email', 0)";
     }
 
     if(!mysqli_query($database, $update_query)) {
