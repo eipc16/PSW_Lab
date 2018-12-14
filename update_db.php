@@ -4,12 +4,12 @@
   $secret = '758fa765cc43c5d4ddcc245e512bb80d';
 
   function updateDatabase($validated_data) {
-    $login = $validated_data['login'];
-    $email = $validated_data['email'];
-    $password = hash_hmac('sha256',  $validated_data['password'], $secret);
-    $first_name = $validated_data['first_name'];
-    $last_name = $validated_data['last_name'];
-    $birth_date = $validated_data['birth_date'];
+    $login = quotemeta($validated_data['login']);
+    $email = quotemeta($validated_data['email']);
+    $password = hash_hmac('sha256',  quotemeta($validated_data['password']), $secret);
+    $first_name = quotemeta($validated_data['first_name']);
+    $last_name = quotemeta($validated_data['last_name']);
+    $birth_date = quotemeta($validated_data['birth_date']);
 
     $database = mysqli_connect('localhost', 'epicm', '0DR9aQlWPhQypCOA');
 
@@ -18,6 +18,22 @@
     }
 
     $select_query = "SELECT id FROM account WHERE username = '$login' OR email = '$email'";
+
+    if(mysqli_num_rows(mysqli_query($database, $select_query)) > 0) {
+        die('Użytkownik znajduje się już w bazie!');
+    }
+
+    if(isset($_SESSION['user_id'])) {
+      $update_query = "";
+    } else {
+      $update_query = "INSERT INTO account (id, username, password, first_name, last_name, birth_dat, email)
+                       VALUES (NULL, '$login', '$password', '$first_name', '$last_name', '$birth_date', '$email')";
+    }
+
+    if(!mysqli_query($database, $update_query)) {
+        print('<h1>Nie mogłem dodać/zaktualizować danych</h1>');
+        die(mysqli_error());
+    }
 
     return 1;
   }
@@ -77,6 +93,8 @@
         echo 'Użytkownik znajduje się już w bazie!';
       } elseif(result == 2) {
         echo 'Nie można połączyć się z bazą!';
+      } else {
+        echo 'Nie mozna zaktualizowac/dodac danych!';
       }
   }
 ?>

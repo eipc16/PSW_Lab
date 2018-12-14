@@ -25,7 +25,7 @@
 
   if(!empty($_POST)) {
     if(isset($_POST['action']) && $_POST['action'] == 'login' && isset($_POST['user']) && isset($_POST['password'])) {
-      loginUser($_POST['user'], $_POST['password']);
+      loginUser(quotemeta($_POST['user']), quotemeta($_POST['password']));
     } elseif(isset($_POST['action']) && $_POST['action'] == 'logout') {
       session_destroy();
     }
