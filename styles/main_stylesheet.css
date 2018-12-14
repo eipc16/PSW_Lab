@@ -180,3 +180,7 @@ html {
   top: 25px;
   text-align: center;
 }
+
+.navbutton {
+  width: 100px;
+}

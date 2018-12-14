@@ -23,18 +23,24 @@
   <img src="buttons/about.png" id="about" alt="Something about us">
 </a>
 <div id="login">
-<form method="post" action="login.php" <?php if(isset($_SESSION['user_id'])) echo 'hidden';?>>
+<form method="post" class="table" action="login.php" <?php if(isset($_SESSION['user_id'])) echo 'hidden';?>>
   <input type="hidden" name="target" value="index.html" />
   <input type="hidden" name="action" value="login"/>
-  <input type="text" name="user"/>
-  <input type="password" name="password"/>
-  <input type="submit" value="Zaloguj się!"/>
+  <div class="tableRow">
+    <input type="text" name="user"/>
+    <input class="navbutton" type="submit" value="Zaloguj się!"/>
+  </div>
+  <div class="tableRow">
+    <input type="password" name="password"/>
+    <a href="update_db.php"><input class="navbutton" type="button" value="Zarejestruj się!"/></a>
+  </div>
 </form>
-<form method="post" action="login.php" <?php if(!isset($_SESSION['user_id'])) echo 'hidden';?>>
+<form method="post" class="table" action="login.php" <?php if(!isset($_SESSION['user_id'])) echo 'hidden';?>>
   <input type="hidden" name="target" value="index.html" />
   <input type="hidden" name="action" value="logout"/>
   <div>Użytkownik: <?php echo $_SESSION['user_id'] ?> </div><br>
-  <input type="submit" value="Wyloguj się!"/>
+  <input class="navbutton"  type="submit" value="Wyloguj się!"/>
+  <a href="update_db.php"><input class="navbutton" type="button" value="Zarządzaj kontem!"/></a>
 </form>
 </div>
 </html>

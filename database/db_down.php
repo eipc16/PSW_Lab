@@ -15,10 +15,10 @@ CREATE TABLE User (
   first_name  VARCHAR(40),
   last_name   VARCHAR(40),
   birth_date  DATE,
-  country     VARCHAR(40)
+  email       VARCHAR(60)
 );
 
-INSERT INTO Users (username, password, first_name, last_name, birth_date, country)
-  VALUES (...);
+INSERT INTO Users (username, password, first_name, last_name, birth_date, email)
+  VALUES (NULL, ...);
 */
 ?>
