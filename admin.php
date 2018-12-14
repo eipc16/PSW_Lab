@@ -16,7 +16,7 @@
   <script src="scripts/navigation.js"></script>
 </head>
 
-<body>
+<body id='indexBody'>
   <nav>
     <div w3-include-html="navigation.php"></div>
   </nav>
