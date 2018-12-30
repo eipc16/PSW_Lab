@@ -50,6 +50,41 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="buttons\about.png" />
+    <Content Include="buttons\feedback.png" />
+    <Content Include="buttons\games.png" />
+    <Content Include="buttons\home.png" />
+    <Content Include="buttons\newsletter.png" />
+    <Content Include="buttons\start.png" />
+    <Content Include="feedback.html" />
+    <Content Include="form.aspx" />
+    <Content Include="form2.html" />
+    <Content Include="games.html" />
+    <Content Include="games\games_data.txt" />
+    <Content Include="games\heroes.jpg" />
+    <Content Include="games\simcity.jpg" />
+    <Content Include="games\simcity2.jpg" />
+    <Content Include="images\border.png" />
+    <Content Include="images\details_bg.png" />
+    <Content Include="images\mario.png" />
+    <Content Include="images\retro.jpg" />
+    <Content Include="images\wallpaper.png" />
+    <Content Include="index.html" />
+    <Content Include="main.html" />
+    <Content Include="navigation.html" />
+    <Content Include="scripts\collections.js" />
+    <Content Include="scripts\feedback.js" />
+    <Content Include="scripts\gamedata.js" />
+    <Content Include="scripts\init_game.js" />
+    <Content Include="scripts\navigation.js" />
+    <Content Include="scripts\simplegame.js" />
+    <Content Include="scripts\tables.js" />
+    <Content Include="simplegame.html" />
+    <Content Include="styles\games.css" />
+    <Content Include="styles\main_stylesheet.css" />
+    <Content Include="styles\navigation.css" />
+    <Content Include="styles\simplegame.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -60,6 +95,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="assets\Amaranth-Regular.otf" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
