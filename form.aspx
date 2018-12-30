@@ -3,7 +3,6 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Formularz - RetroGames</title>
   <meta name="description" content="Formularz">
@@ -22,11 +21,11 @@
   </nav>
 
   <section>
-    <h2><strong>Wypełnij powyższy formularz, aby zapisać się do naszego NEWSLETTERa!</strong></h2>
-    <form action="form2.html" autocomplete='on'>
-      Imię: <input type="text" name="fname" autofocus> (np. Adam)<br><br>
+    <h2><strong>Wypelnij powyzszy formularz, aby zapisac sie do naszego NEWSLETTERa!</strong></h2>
+    <form id="form1" runat="server">
+      Imie: <asp:TextBox runat="server" id="name"/> (np. Adam)<br><br>
       Nazwisko: <input type="text" name="lname" required> (np. Nowak)<br><br>
-      Miesiąc urodzin: <input type="text" value="" list="months">
+      Miesiac urodzin: <input type="text" value="" list="months">
       <datalist id="months">
         <option value="Styczeń"></option>
         <option value="Luty"></option>
