@@ -112,6 +112,15 @@ namespace PSW_Lab {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator mailValidator;
         
         /// <summary>
+        /// mailReqValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator mailReqValidator;
+        
+        /// <summary>
         /// mail2 control.
         /// </summary>
         /// <remarks>
@@ -137,5 +146,14 @@ namespace PSW_Lab {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button submit;
+        
+        /// <summary>
+        /// DataLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label DataLabel;
     }
 }

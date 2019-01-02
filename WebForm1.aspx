@@ -31,19 +31,23 @@
       <br><br>
       Wiek: <asp:TextBox runat="server" id="age" />
       <asp:RegularExpressionValidator id="ageValidator1" ControlToValidate="age" runat="server" ErrorMessage="Wiek jest liczba dodatnia!" ValidationExpression="\d+" />
-      <asp:RangeValidator runat="server" ID="ageValidator" ControlToValidate="age" MinimumValue="15" MaximumValue="150" ErrorMessage="Musisz mieć co najmniej 15 lat!" />
+      <asp:RangeValidator runat="server" ID="ageValidator" ControlToValidate="age" MinimumValue=15 Type=Integer MaximumValue=150 ErrorMessage="Musisz mieć co najmniej 15 lat! (i mniej niz 150)" />
       <br><br>
 
       E-mail: <asp:TextBox runat="server" ID="mail" /> (np. adam.nowak@gmail.com) 
       <asp:RegularExpressionValidator ID="mailValidator" ControlToValidate="mail" runat="server" ValidationExpression="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" ErrorMessage="Podaj POPRAWNY mail!" />
+      <asp:RequiredFieldValidator runat="server" id="mailReqValidator" controltovalidate="mail" errormessage="Wprowadz mail!"/>
+      
       <br><br>
       Powtórz E-mail:
       <asp:TextBox runat="server" ID="mail2" />
       <asp:CompareValidator runat="server" ID="mail2Validator" ControlToValidate="mail2" ControlToCompare="mail" ErrorMessage="Pola musza byc jednakowe!" />
       <br><br>
       
-    <asp:Button runat="server" id="submit" text="Ok" onclick="btnSubmitForm_Click"/>
+      <asp:Button runat="server" id="submit" text="Ok" onclick="btnSubmitForm_Click"/>
+
     </form>
+    <asp:Label runat="server" ID="DataLabel" Visible="false" >aa</asp:Label> 
   </section>
   <footer>
     <p>Copyright <strong>&copy; P & P, Inc. 2018.</strong> Wszelkie prawa zastrzeżone.</p>
