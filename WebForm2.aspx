@@ -36,9 +36,10 @@
          <asp:CheckBoxList ID="PendantsList" runat="server" Visible=false>
          </asp:CheckBoxList>
  
-         <asp:Button id="Button1" Text="Submit"  runat="server"/>
+         <asp:Button id="AddItems" OnClick="AddItemsToList" Text="Dodaj do koszyak"  runat="server"/>
          <br />
-         <asp:Label id="Label1" font-names="Verdana" font-size="8pt" runat="server"/>
+         <p>Ilosc rzeczy w koszyku: <asp:Label id="ICount" runat="server"/></p>
+
  
      </form>
   <footer>
