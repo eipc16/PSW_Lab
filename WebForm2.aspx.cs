@@ -13,35 +13,63 @@ namespace PSW_Lab
         Hashtable cups;
         Hashtable shirts;
         Hashtable pendants;
+        int curr_category;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            cups = new Hashtable();
-            shirts = new Hashtable();
-            pendants = new Hashtable();
-            cups.Add("czerwony kubek", 2.90);
-            cups.Add("zielony kubek", 3.15);
-            shirts.Add("czerwona koszulka", 15.90);
-            shirts.Add("zielony koszulka", 15.90);
-            pendants.Add("breloczek z mario", 8.90);
-            pendants.Add("breloczek z pikachu", 14.90);
-            FillList();
+            if (!IsPostBack)
+            {
+                cups = new Hashtable();
+                shirts = new Hashtable();
+                pendants = new Hashtable();
+                cups.Add("czerwony kubek", 2.90);
+                cups.Add("zielony kubek", 3.15);
+                shirts.Add("czerwona koszulka", 15.90);
+                shirts.Add("zielony koszulka", 15.90);
+                pendants.Add("breloczek z mario", 8.90);
+                pendants.Add("breloczek z pikachu", 14.90);
+                FillList();
+            }
+            else
+            {
+                if (Categories.SelectedIndex == 0)
+                {
+                    CupsList.Visible = true;
+                    ShirtsList.Visible = false;
+                    PendantsList.Visible = false;
+                }
+                else if (Categories.SelectedIndex == 1)
+                {
+                    CupsList.Visible = false;
+                    ShirtsList.Visible = true;
+                    PendantsList.Visible = false;
+                }
+                else if (Categories.SelectedIndex == 2)
+                {
+                    CupsList.Visible = false;
+                    ShirtsList.Visible = false;
+                    PendantsList.Visible = true;
+                }
+            }
+
+        
 
         }
 
         protected void FillList()
         {
             foreach (DictionaryEntry product in cups) {
-                products.Items.Add(product.Key + ": " + product.Value.ToString());
+                CupsList.Items.Add(product.Key + ": " + product.Value.ToString());
             }
             foreach (DictionaryEntry product in shirts)
             {
-                products.Items.Add(product.Key + ": " + product.Value.ToString());
+                ShirtsList.Items.Add(product.Key + ": " + product.Value.ToString());
             }
             foreach (DictionaryEntry product in pendants)
             {
-                products.Items.Add(product.Key + ": " + product.Value.ToString());
+                PendantsList.Items.Add(product.Key + ": " + product.Value.ToString());
             }
+            
         }
     }
 }

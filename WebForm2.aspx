@@ -24,12 +24,16 @@
  
      <form id="form1" runat="server">
  
-         <asp:RadioButtonList id="RadioButtonList1" runat="server">
+         <asp:RadioButtonList id="Categories" runat="server" AutoPostBack=true>
             <asp:ListItem>Kubki</asp:ListItem>
             <asp:ListItem>Koszulki</asp:ListItem>
             <asp:ListItem>Breloki</asp:ListItem>
          </asp:RadioButtonList>
-         <asp:CheckBoxList ID="products" runat="server">
+         <asp:CheckBoxList ID="CupsList" runat="server" Visible=false>
+         </asp:CheckBoxList>
+         <asp:CheckBoxList ID="ShirtsList" runat="server" Visible=false>
+         </asp:CheckBoxList>
+         <asp:CheckBoxList ID="PendantsList" runat="server" Visible=false>
          </asp:CheckBoxList>
  
          <asp:Button id="Button1" Text="Submit"  runat="server"/>
