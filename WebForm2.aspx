@@ -25,13 +25,12 @@
      <form id="form1" runat="server">
  
          <asp:RadioButtonList id="RadioButtonList1" runat="server">
-            <asp:ListItem>Item 1</asp:ListItem>
-            <asp:ListItem>Item 2</asp:ListItem>
-            <asp:ListItem>Item 3</asp:ListItem>
-            <asp:ListItem>Item 4</asp:ListItem>
-            <asp:ListItem>Item 5</asp:ListItem>
-            <asp:ListItem>Item 6</asp:ListItem>
+            <asp:ListItem>Kubki</asp:ListItem>
+            <asp:ListItem>Koszulki</asp:ListItem>
+            <asp:ListItem>Breloki</asp:ListItem>
          </asp:RadioButtonList>
+         <asp:CheckBoxList ID="products" runat="server">
+         </asp:CheckBoxList>
  
          <asp:Button id="Button1" Text="Submit"  runat="server"/>
          <br />
