@@ -4,8 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Formularz - RetroGames</title>
-  <meta name="description" content="Formularz">
+  <title>Sklepik - RetroGames</title>
+  <meta name="description" content="Merch">
   <meta name="author" content="Przemysław Pietrzak, Mateusz Pakuła">
   <meta name="keywords" content="retro, games, gry, old, stare, game, oldschool">
 
@@ -36,9 +36,11 @@
          <asp:CheckBoxList ID="PendantsList" runat="server" Visible=false>
          </asp:CheckBoxList>
  
-         <asp:Button id="AddItems" OnClick="AddItemsToList" Text="Dodaj do koszyak"  runat="server"/>
+         <asp:Button id="AddItems" OnClick="AddItemsToList" Text="Dodaj do koszyka"  runat="server"/>
          <br />
          <p>Ilosc rzeczy w koszyku: <asp:Label id="ICount" runat="server"/></p>
+         <br />
+         <a href="WebForm3.aspx">Podsumowanie zamowienia</a>
 
  
      </form>
