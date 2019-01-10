@@ -20,6 +20,24 @@
     <div w3-include-html="navigation.html"></div>
   </nav>
 
+   <h3>Lista produktow</h3>
+ 
+     <form id="form1" runat="server">
+ 
+         <asp:RadioButtonList id="RadioButtonList1" runat="server">
+            <asp:ListItem>Item 1</asp:ListItem>
+            <asp:ListItem>Item 2</asp:ListItem>
+            <asp:ListItem>Item 3</asp:ListItem>
+            <asp:ListItem>Item 4</asp:ListItem>
+            <asp:ListItem>Item 5</asp:ListItem>
+            <asp:ListItem>Item 6</asp:ListItem>
+         </asp:RadioButtonList>
+ 
+         <asp:Button id="Button1" Text="Submit"  runat="server"/>
+         <br />
+         <asp:Label id="Label1" font-names="Verdana" font-size="8pt" runat="server"/>
+ 
+     </form>
   <footer>
     <p>Copyright <strong>&copy; P & P, Inc. 2018.</strong> Wszelkie prawa zastrzeżone.</p>
   </footer>
