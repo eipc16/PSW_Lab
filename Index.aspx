@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-
-<html lang="pl">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Strona główna - RetroGames</title>
-  <meta name="description" content="Strona poświęcona wszystkim starym grom.">
-  <meta name="author" content="Przemysław Pietrzak, Mateusz Pakuła">
-  <meta name="keywords" content="retro, games, gry, old, stare, game, oldschool">
-
-  <link rel="stylesheet" href="styles/main_stylesheet.css">
-  <link rel="stylesheet" href="styles/navigation.css">
-
-  <script src="scripts/navigation.js"></script>
-  <script src="scripts/init_game.js"></script>
-</head>
-
-<body id="indexBody">
-  <nav>
-    <div w3-include-html="navigation.html"></div>
-  </nav>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="PSW_Lab.Index" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="indexBody" ContentPlaceHolderID="Content" runat="server">
   <h1><strong>RetroGames - Serwis poświęcony dawnym grom</strong></h1>
   <p id="indexFront">
     Wiele osób często powtarza, że obecne gry nie są już takie, jak kiedyś. Wszystko się zmienia. Technologia, upodobania, sprzęt, rynek i wiele więcej. To, co lata temu dawało nam radość, odeszło bezpowrotnie, a najnowsze produkcje nie potrafią
@@ -29,16 +10,5 @@
     do sklepu i kupić wypatrzoną produkcję, aby później zatracić się w pikselowym świecie. Te czasy już nie wrócą i trzeba się z tym pogodzić
   </p>
   <a href="https://antyweb.pl/stare-gry/">Cytat - źródło</a>
-
   <img src="images/mario.png" alt="" id="mario">
-
-  <footer>
-    <p>Copyright <strong>&copy; P & P, Inc. 2018.</strong> Wszelkie prawa zastrzeżone. </p>
-  </footer>
-
-  <script type="text/javascript">
-    includeHTML();
-  </script>
-</body>
-
-</html>
+</asp:Content>

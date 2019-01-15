@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-
-<html lang="pl">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Start - RetroGames</title>
-  <meta name="description" content="Strona poświęcona wszystkim starym grom.">
-  <meta name="author" content="Przemysław Pietrzak, Mateusz Pakuła">
-  <meta name="keywords" content="retro, games, gry, old, stare, game, oldschool">
-
-  <link rel="stylesheet" href="styles/main_stylesheet.css">
-  <link rel="stylesheet" href="styles/navigation.css">
-
-  <script src="scripts/navigation.js"></script>
-</head>
-
-<body>
-  <nav>
-    <div w3-include-html="navigation.html"></div>
-  </nav>
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="PSW_Lab.WebForm5" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
   <article>
     <h1>Gry RETRO</h1>
     <section>
@@ -74,13 +55,4 @@
     <a href="https://antyweb.pl/stare-gry/">Cytat - źródło</a>
   </article>
   -->
-  <footer>
-    <p>Copyright <strong>&copy; P & P, Inc. 2018.</strong> Wszelkie prawa zastrzeżone.</p>
-  </footer>
-
-  <script type="text/javascript">
-    includeHTML();
-  </script>
-</body>
-
-</html>
+</asp:Content>

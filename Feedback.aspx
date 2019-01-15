@@ -1,26 +1,7 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Feedback - RetroGames</title>
-  <meta name="description" content="Strona umożliwiająca wysłanie opinii.">
-  <meta name="author" content="Przemysław Pietrzak, Mateusz Pakuła">
-  <meta name="keywords" content="retro, games, gry, old, stare, game, oldschool">
-
-  <link rel="stylesheet" href="styles/main_stylesheet.css">
-  <link rel="stylesheet" href="styles/navigation.css">
-
-  <script src="scripts/navigation.js"></script>
-  <script src="scripts/feedback.js"></script>
-</head>
-
-<body>
-  <nav>
-    <div w3-include-html="navigation.html"></div>
-  </nav>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Feedback.aspx.cs" Inherits="PSW_Lab.Feedback" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
 
   <h1>Wyślij swoją opinię</h1>
   <p>Tutaj możesz przekazać nam swoją opinię o stronie!</p>
@@ -99,13 +80,4 @@
 
   <p id="textHelp"></p>
 
-  <footer>
-    <p>Copyright <strong>&copy; P & P, Inc. 2018.</strong> Wszelkie prawa zastrzeżone.</p>
-  </footer>
-
-  <script type="text/javascript">
-    includeHTML();
-  </script>
-</body>
-
-</html>
+</asp:Content>

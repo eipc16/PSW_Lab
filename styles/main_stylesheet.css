@@ -78,9 +78,9 @@ a:target {
 #indexBody {
   background: #e6e2d3 url("../images/wallpaper.png") no-repeat right bottom;
   background-attachment: fixed;
-  background-size: 25%;
-  height: 100%;
-  width: 100%;
+  background-size: 15%;
+  height: 90%;
+  width: 90%;
 }
 
 html {

@@ -8,7 +8,7 @@ using System.Collections;
 
 namespace PSW_Lab
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class Merch : System.Web.UI.Page
     {
         Hashtable cups;
         Hashtable shirts;
@@ -67,13 +67,14 @@ namespace PSW_Lab
                 }
             }
 
-        
+
 
         }
 
         protected void FillList()
         {
-            foreach (DictionaryEntry product in cups) {
+            foreach (DictionaryEntry product in cups)
+            {
                 CupsList.Items.Add(product.Key.ToString());
             }
             foreach (DictionaryEntry product in shirts)
@@ -84,14 +85,16 @@ namespace PSW_Lab
             {
                 PendantsList.Items.Add(product.Key.ToString());
             }
-            
+
         }
 
-        protected void AddItemsToList(object sender, EventArgs e) {
+        protected void AddItemsToList(object sender, EventArgs e)
+        {
             foreach (ListItem product in CupsList.Items)
                 if (product.Selected)
                 {
-                    if (Session[product.Value] == null) {
+                    if (Session[product.Value] == null)
+                    {
                         Session[product.Value] = 1;
                         Session["ItemCount"] = Int32.Parse(Session["ItemCount"].ToString()) + 1;
                         if (Session["Summary"] == null)
@@ -101,7 +104,7 @@ namespace PSW_Lab
                         if (Session["TotalPrice"] == null)
                             Session["TotalPrice"] = cups[product.Value];
                         else
-                            Session["TotalPrice"] = (double)Session["TotalPrice"] +  (double) cups[product.Value];
+                            Session["TotalPrice"] = (double)Session["TotalPrice"] + (double)cups[product.Value];
                     }
                     product.Selected = false;
                 }
@@ -129,7 +132,7 @@ namespace PSW_Lab
                     if (Session[product.Value] == null)
                     {
                         Session[product.Value] = 1;
-                        if(Session["ItemCount"] != null) 
+                        if (Session["ItemCount"] != null)
                             Session["ItemCount"] = Int32.Parse(Session["ItemCount"].ToString()) + 1;
                         if (Session["Summary"] == null)
                             Session["Summary"] = product.Value + ": " + pendants[product.Value].ToString() + " PLN";

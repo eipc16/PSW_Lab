@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace PSW_Lab
 {
-    public partial class WebForm4 : System.Web.UI.Page
+    public partial class PurchaseConfirmation : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -19,7 +19,7 @@ namespace PSW_Lab
                 Session.Clear();
             }
             else
-                Response.Redirect("index.html");
+                Response.Redirect("Index.aspx");
         }
     }
 }
