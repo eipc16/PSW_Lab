@@ -5,7 +5,7 @@
    <a href="ProductList.aspx"><h3>Lista produktow</h3></a>
  
      <form id="form1" runat="server">
- 
+    
          <asp:RadioButtonList id="Categories" runat="server" AutoPostBack=true>
             <asp:ListItem>Kubki</asp:ListItem>
             <asp:ListItem>Koszulki</asp:ListItem>

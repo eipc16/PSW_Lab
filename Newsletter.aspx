@@ -3,8 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
 <section>
-    <h2><strong>Wypelnij powyzszy formularz, aby zapisac sie do naszego NEWSLETTERa!</strong></h2>
     <form id="form2" runat="server">
+    <h2><strong>
+        Wypelnij powyzszy formularz, aby zapisac sie do naszego NEWSLETTERa!</strong></h2>
       Imie: <asp:TextBox runat="server" id="name"/>(np. Adam)
       <asp:RequiredFieldValidator runat="server" id="reqName" controltovalidate="name" errormessage="Wprowadz imie!"/>
       <br><br>

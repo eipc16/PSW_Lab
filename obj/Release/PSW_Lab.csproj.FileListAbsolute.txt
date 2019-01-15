@@ -2,3 +2,11 @@ C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PSW_Lab\bin\PSW_Lab
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PSW_Lab\bin\PSW_Lab.pdb
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PSW_Lab\obj\Release\PSW_Lab.dll
 C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PSW_Lab\obj\Release\PSW_Lab.pdb
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PSW_Lab\obj\Release\PSW_Lab.ProductList.resources
+C:\Users\Administrator\Documents\Visual Studio 2010\Projects\PSW_Lab\obj\Release\PSW_Lab.csproj.GenerateResource.Cache
+C:\inetpub\wwwroot\PSW_Lab\bin\PSW_Lab.dll
+C:\inetpub\wwwroot\PSW_Lab\bin\PSW_Lab.pdb
+C:\inetpub\wwwroot\PSW_Lab\obj\Release\PSW_Lab.ProductList.resources
+C:\inetpub\wwwroot\PSW_Lab\obj\Release\PSW_Lab.csproj.GenerateResource.Cache
+C:\inetpub\wwwroot\PSW_Lab\obj\Release\PSW_Lab.dll
+C:\inetpub\wwwroot\PSW_Lab\obj\Release\PSW_Lab.pdb
