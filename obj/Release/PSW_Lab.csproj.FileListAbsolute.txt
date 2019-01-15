@@ -10,3 +10,4 @@ C:\inetpub\wwwroot\PSW_Lab\obj\Release\PSW_Lab.ProductList.resources
 C:\inetpub\wwwroot\PSW_Lab\obj\Release\PSW_Lab.csproj.GenerateResource.Cache
 C:\inetpub\wwwroot\PSW_Lab\obj\Release\PSW_Lab.dll
 C:\inetpub\wwwroot\PSW_Lab\obj\Release\PSW_Lab.pdb
+C:\inetpub\wwwroot\PSW_Lab\obj\Release\PSW_Lab.csprojResolveAssemblyReference.cache
