@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-   <h3>Lista produktow</h3>
+   <a href="ProductList.aspx"><h3>Lista produktow</h3></a>
  
      <form id="form1" runat="server">
  
